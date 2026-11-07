@@ -135,6 +135,10 @@ a:hover {
 .prose li {
   color: var(--text-2);
 }
+.prose a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 .prose strong {
   color: var(--ink);
   font-weight: 600;
