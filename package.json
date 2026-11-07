@@ -12,6 +12,7 @@
     "check:guide": "tsx scripts/check-guide.ts",
     "test:e2e": "playwright test",
     "mock:webhook": "node scripts/mock-webhook.mjs",
+    "indexnow": "tsx scripts/indexnow.ts",
     "check": "npm run build && npm run check:copy && npm run check:links && npm run test:e2e"
   },
   "dependencies": {

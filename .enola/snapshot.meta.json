@@ -1,0 +1,1154 @@
+{
+  "repo_path": "/Users/andrewnorman/dev/buildingsauce-site",
+  "repo_label": "building-sauce",
+  "generated_at": "2026-11-07T19:37:53Z",
+  "duration": "5.470596291s",
+  "extractors": [
+    "manifests",
+    "mdintent",
+    "typescript"
+  ],
+  "explainers": [
+    "cycles",
+    "layers",
+    "crossrepo",
+    "coverage",
+    "unused-routes",
+    "domain",
+    "query-loops",
+    "dead-methods",
+    "entry-points",
+    "messaging-coverage",
+    "god-class",
+    "hotspots",
+    "dependency-depth",
+    "exported-surface",
+    "complexity-outliers",
+    "intent",
+    "constraints",
+    "vendored-candidates"
+  ],
+  "renderers": [
+    "llm_context"
+  ],
+  "file_hashes": [
+    {
+      "path": "app/data/[slug]/download/route.ts",
+      "hash": "d37758c1abc7b4e051b800da41fa749432bbbc379ee3b00ae95b067ab9540394",
+      "mod_time": "2026-11-07T17:45:01Z"
+    },
+    {
+      "path": "components/SiteFooter.tsx",
+      "hash": "4d8e2704d2dbdd9c901e2e15b9ced45603e1619b96e9a5bc1c12d2859cfc48ff",
+      "mod_time": "2026-11-07T17:25:25Z"
+    },
+    {
+      "path": "tests/screenshots/boiler-repair-leads-768.png",
+      "hash": "0de6c849448875fe0600bfea3a905f006c7d2957340540f5202e5deb6b2ffe55",
+      "mod_time": "2026-11-07T17:59:04Z"
+    },
+    {
+      "path": "tests/screenshots/data-390.png",
+      "hash": "4fd8e1ad2c9d47b6668972d9eccccf41478252e2033f6708ed97ca7a48b42e37",
+      "mod_time": "2026-11-07T17:59:00Z"
+    },
+    {
+      "path": "tests/screenshots/data-fisp-unsafe-buildings-1440.png",
+      "hash": "315d35ea2a23e7ed1d6a3d5308fe8e0d216496822518f8d55effe835ae28f876",
+      "mod_time": "2026-11-07T17:59:18Z"
+    },
+    {
+      "path": "tests/screenshots/guides-fisp-cycle-10-deadlines-390.png",
+      "hash": "89f0144d215a7e9a5922380e12d84cb4f7fd4b34b98d3d5841376ea34d731195",
+      "mod_time": "2026-11-07T17:59:08Z"
+    },
+    {
+      "path": "components/PageShell.tsx",
+      "hash": "546505c575317b8f4b58f0dca81ba558e749de8f897f05861a6b17af5cc5dc0e",
+      "mod_time": "2026-11-07T17:35:36Z"
+    },
+    {
+      "path": "components/SampleRowCard.tsx",
+      "hash": "6ca718fcb078988c6309a8d0238a753394c12a9a9f5f0316ab41df80e0377d32",
+      "mod_time": "2026-11-07T17:28:41Z"
+    },
+    {
+      "path": "content/guides/sidewalk-shed-rules.mdx",
+      "hash": "dd20cbd6cac463659645fb421a1413b4b52b4628bb2739a3fc5f18e31a3af3ae",
+      "mod_time": "2026-11-07T17:53:09Z"
+    },
+    {
+      "path": "data/stats/garages.json",
+      "hash": "19d0cdcf64f249363ef35ff142d24b5df13f9875628b8aa5a1a57d8a75f2782f",
+      "mod_time": "2026-11-07T17:35:38Z"
+    },
+    {
+      "path": "public/logo/favicon-32.png",
+      "hash": "748432fe0128b77216b57c957924b2891af4a07796555449ae46f84991f55b75",
+      "mod_time": "2026-11-07T17:21:59Z"
+    },
+    {
+      "path": "tests/screenshots/data-nyc-parking-garages-1440.png",
+      "hash": "fa1dc5711e4aacdd5640fbf9d80eb92f61be8c51bb6857236fa72b920a093888",
+      "mod_time": "2026-11-07T17:59:18Z"
+    },
+    {
+      "path": "tests/screenshots/facade-restoration-leads-390.png",
+      "hash": "0d2112b98fbce9ca4775cf598f8686440089a98ad1a3a8ad7c339a79f2995e48",
+      "mod_time": "2026-11-07T17:59:02Z"
+    },
+    {
+      "path": "tests/screenshots/guides-local-law-11-penalties-1440.png",
+      "hash": "d26d35bbcab8fbcfeae2e3fb44045797f77d38831013dc6377fdcebe8e15741d",
+      "mod_time": "2026-11-07T17:59:12Z"
+    },
+    {
+      "path": "docs/spec/BUILD-PROMPT.md",
+      "hash": "1b60747157579bc560ff5b53d4bcd1c373b0d60d175b781ec415c25882554176",
+      "mod_time": "2026-11-07T17:21:59Z"
+    },
+    {
+      "path": "tests/screenshots/guides-sidewalk-shed-rules-1440.png",
+      "hash": "18c834a3194f6f72bc555e8e2daa4a43470a939a7e1ac10a5404722df3585902",
+      "mod_time": "2026-11-07T17:59:16Z"
+    },
+    {
+      "path": "tests/screenshots/guides-sidewalk-shed-rules-768.png",
+      "hash": "b208da3d0df0af7317826eeb37fee0994f1d61a7f4a01a0d8cce1daca96abcbc",
+      "mod_time": "2026-11-07T17:59:16Z"
+    },
+    {
+      "path": "tests/screenshots/home-390.png",
+      "hash": "97e37578bc3c7d84fb5c3c57f40fdcdcb43327d05ac350432948e2ce09c381c1",
+      "mod_time": "2026-11-07T17:58:57Z"
+    },
+    {
+      "path": "tests/screenshots/parking-garage-leads-1440.png",
+      "hash": "b78a228f0768b163d183b477b77256736c3a946a52e2529dd610437657512ee2",
+      "mod_time": "2026-11-07T17:59:03Z"
+    },
+    {
+      "path": "tests/screenshots/parking-garage-leads-768.png",
+      "hash": "c8f33d2e3171a2e7d9669528576b6659ab7fde6786d4a64ae66ae7ad80a454cb",
+      "mod_time": "2026-11-07T17:59:03Z"
+    },
+    {
+      "path": "tests/screenshots/thanks-type-sample-trade-facade-768.png",
+      "hash": "6dcf78964bd1339b19924bafe96d3a446caffb6d6e97a1bec95477a6fdfdec2a",
+      "mod_time": "2026-11-07T17:59:18Z"
+    },
+    {
+      "path": "app/thanks/page.tsx",
+      "hash": "164aca2f393486276f6dd07cbbe091a8e214ad0ab999aaa3296de20019770f1a",
+      "mod_time": "2026-11-07T17:56:43Z"
+    },
+    {
+      "path": "tests/screenshots/boiler-repair-leads-1440.png",
+      "hash": "bcde476eed8017c1cdaeff324ab4a2d45d84b518ca19c76b6605b40eff141111",
+      "mod_time": "2026-11-07T17:59:05Z"
+    },
+    {
+      "path": "tests/screenshots/data-nyc-parking-garages-390.png",
+      "hash": "489fb074a224921dd2d56f397336762a2c1ea998acf3be58c4c8862ec812ce0e",
+      "mod_time": "2026-11-07T17:59:18Z"
+    },
+    {
+      "path": "tests/screenshots/guides-local-law-152-1440.png",
+      "hash": "f62b10206517dfe4c65f4e8f13d7236c87e7d5cce87715d4f1b49446af6558c5",
+      "mod_time": "2026-11-07T17:59:14Z"
+    },
+    {
+      "path": "app/icon.png",
+      "hash": "e3a896de7ec5ab9f4f65b2298aff35b2e2ac2f31d31795ab0f1bf08be69c2bd1",
+      "mod_time": "2026-11-07T17:21:59Z"
+    },
+    {
+      "path": "components/GuideArticle.tsx",
+      "hash": "551081926f4fbbe5d86763e09c3b4c8de781f6439fc021a93c7b466b1913f909",
+      "mod_time": "2026-11-07T17:44:58Z"
+    },
+    {
+      "path": "components/KeyFacts.tsx",
+      "hash": "3daf98bbe9d601d606c346ce019887bac2ec5acacc62609b702b92bcc69440ce",
+      "mod_time": "2026-11-07T17:28:43Z"
+    },
+    {
+      "path": "components/MdxComponents.tsx",
+      "hash": "40f1877ca52bb516752b8dbcdfb59fcfae2c2594d9e306ef820d89c5602ccc67",
+      "mod_time": "2026-11-07T17:41:36Z"
+    },
+    {
+      "path": "components/PricingBand.tsx",
+      "hash": "b16bc49b0da44ff03fab0b58cf0bf74e88e249d29b29f5c5241884210ca5da2f",
+      "mod_time": "2026-11-07T17:55:54Z"
+    },
+    {
+      "path": "content/guides/construction-leads.mdx",
+      "hash": "80b600d3135c76b1c1d206093fab00f008a906d020fc515e50ed1dfd61749e26",
+      "mod_time": "2026-11-07T17:58:32Z"
+    },
+    {
+      "path": "lib/stats.ts",
+      "hash": "9037e21f1c10032716ca3df5aee1b8334c4db27abd63352adb3a17613cd47fa8",
+      "mod_time": "2026-11-07T17:35:37Z"
+    },
+    {
+      "path": "tests/screenshots/data-768.png",
+      "hash": "12faacd3aa209b0918b94d202a91b5c00688a489943e4acdf518b15ecb8dbada",
+      "mod_time": "2026-11-07T17:59:00Z"
+    },
+    {
+      "path": "HANDOVER.md",
+      "hash": "0b5dbe84628573b46c1f78e989a12be52dc47a38ba082832e67cb6d510240c76",
+      "mod_time": "2026-11-07T18:40:46Z"
+    },
+    {
+      "path": "app/about/page.tsx",
+      "hash": "cea3275428725d1f649bac91fb3f39e72ea353b00ab56b82647e1135c9d47206",
+      "mod_time": "2026-11-07T17:41:37Z"
+    },
+    {
+      "path": "app/api/lead/route.ts",
+      "hash": "4d190b0e8b4efd88dfd5c05c3d051d21315e4797a4f25863edfcd6ef8d260407",
+      "mod_time": "2026-11-07T18:40:46Z"
+    },
+    {
+      "path": "app/robots.ts",
+      "hash": "75b02990219a793ccbe1d9d0ac15a3c8603b823183e3c0f2526425fda8d69c0f",
+      "mod_time": "2026-11-07T17:41:39Z"
+    },
+    {
+      "path": "lib/mdx.ts",
+      "hash": "94c4f42b72d61a53f93815effd074919b10480096c6fcc39256a9ff505a2a204",
+      "mod_time": "2026-11-07T17:35:38Z"
+    },
+    {
+      "path": "scripts/check-copy.ts",
+      "hash": "ca34c94bd7c42dcd0124f89b69087c0449f9abda6233b3160ef4f40464b5fb48",
+      "mod_time": "2026-11-07T17:48:55Z"
+    },
+    {
+      "path": "scripts/check-links.ts",
+      "hash": "3f89f0d1314a2e50ea5db8a1509edc2ac1c5f95691a37f716193e67e97a768c7",
+      "mod_time": "2026-11-07T17:51:09Z"
+    },
+    {
+      "path": "tests/screenshots/about-1440.png",
+      "hash": "cf6ea705c21fcaf1ac240c34be048b7da2ba73cd7d398e9d5667ad46a7523b8e",
+      "mod_time": "2026-11-07T17:59:00Z"
+    },
+    {
+      "path": "AGENTS.md",
+      "hash": "063098f6cb31bb44c6f8fbea25b3876de7ee1e5f7d00a50dbab506f6415eb7f0",
+      "mod_time": "2026-11-07T17:18:04Z"
+    },
+    {
+      "path": "data/stats/sheds.json",
+      "hash": "f28cd451685d3828b5fea7ec16e4cfbc39bacdbd1266368693cb8ca97bc49da9",
+      "mod_time": "2026-11-07T17:35:37Z"
+    },
+    {
+      "path": "scripts/check-guide.ts",
+      "hash": "708ce8d0c3f8caa1fd7d3cfe0cf27c9cdcb4a03d3c3a65c71313d13a2eb873f6",
+      "mod_time": "2026-11-07T17:48:55Z"
+    },
+    {
+      "path": "tests/screenshots/compare-390.png",
+      "hash": "31864360de3c0b382ba4c36dd702b37c7d939e11d301d61ff8495ab27a66863f",
+      "mod_time": "2026-11-07T17:59:01Z"
+    },
+    {
+      "path": "tests/screenshots/construction-leads-1440.png",
+      "hash": "57ed759846f59d01aa7cc8386abd2554696bfd6e4eb877445d31b35175d3b2a6",
+      "mod_time": "2026-11-07T17:59:08Z"
+    },
+    {
+      "path": "tests/screenshots/data-nyc-parking-garages-768.png",
+      "hash": "c0ad78eac7bb94ebbd37f5746632088bf8059c023d1ebe1a246e0dfa3dfc939a",
+      "mod_time": "2026-11-07T17:59:18Z"
+    },
+    {
+      "path": "tests/screenshots/does-not-exist-768.png",
+      "hash": "90d9e6098aa43c0be21379512bd3d39cbdc4293f785aa1924742c55b1aa4d527",
+      "mod_time": "2026-11-07T17:59:19Z"
+    },
+    {
+      "path": "tests/screenshots/facade-restoration-leads-768.png",
+      "hash": "7d796a3836e69dfbbe16eed0ad075791bf5c656b30dde909634d935eed982b36",
+      "mod_time": "2026-11-07T17:59:02Z"
+    },
+    {
+      "path": "app/free-sample/page.tsx",
+      "hash": "0c3e7476d50b4d1188955f749e21232991570dd5f1c0c36dfce84817ad74cd28",
+      "mod_time": "2026-11-07T17:56:43Z"
+    },
+    {
+      "path": "app/globals.css",
+      "hash": "1feb564e5cf7b4585bb3c6c980d959ca4d3cd4eaf1dfe16bc628b41a94a3331d",
+      "mod_time": "2026-11-07T18:01:51Z"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-07-buildingsauce-site.md",
+      "hash": "5dce88a2b1e762870011e055a8c60d61afd75212aaa6b96401b8b803be939af3",
+      "mod_time": "2026-11-07T17:21:55Z"
+    },
+    {
+      "path": "next.config.ts",
+      "hash": "9252661059f691766568b3c038e578bc74ca15bac8ff793ae31c949b98daf133",
+      "mod_time": "2026-11-07T17:21:59Z"
+    },
+    {
+      "path": "tests/screenshots/florida-condo-leads-390.png",
+      "hash": "a161296f72f00d1e0ad0061c352b5d3667798328ab9a9cb1102ec7ff7e0dca82",
+      "mod_time": "2026-11-07T17:59:06Z"
+    },
+    {
+      "path": "tests/screenshots/guides-local-law-11-penalties-390.png",
+      "hash": "f219b7adcea32d70c47988e3ee69f5006f1ccf704cf90fb1a41f97a9ddc93260",
+      "mod_time": "2026-11-07T17:59:12Z"
+    },
+    {
+      "path": "tests/screenshots/home-1440.png",
+      "hash": "a6eea56dd7acc66b47370b455961f257346245018892a6bb7d67784233d24a4f",
+      "mod_time": "2026-11-07T17:58:58Z"
+    },
+    {
+      "path": "tests/screenshots/how-it-works-1440.png",
+      "hash": "1f964725ef858a59b8d538b4e5353a571f69564b79400a0682f90431e577d987",
+      "mod_time": "2026-11-07T17:58:59Z"
+    },
+    {
+      "path": "app/terms/page.tsx",
+      "hash": "49762ccb9913080cbe34bda576e8a47723500071e5e88548b2c17f1cdef22d05",
+      "mod_time": "2026-11-07T18:08:01Z"
+    },
+    {
+      "path": "components/FAQList.tsx",
+      "hash": "1fa265293f81286ece243782123852a760ab87fbf645e392127315e13821659c",
+      "mod_time": "2026-11-07T17:28:43Z"
+    },
+    {
+      "path": "components/LeadForm.tsx",
+      "hash": "ee99733c63ffc1fe9ec395c6d8250ac6918652a8610a9924c05ae8c8bf918326",
+      "mod_time": "2026-11-07T18:40:46Z"
+    },
+    {
+      "path": "content/guides/florida-sirs-deadline.mdx",
+      "hash": "d826d259d25823a3df572472a8389c7bed084b465c65aada3b8120d792b3e0c6",
+      "mod_time": "2026-11-07T17:54:26Z"
+    },
+    {
+      "path": "tests/screenshots/gas-piping-leads-390.png",
+      "hash": "b337eab98b8c7ca79b2683170ce3db66732564cbec43374544032f284a6f4df9",
+      "mod_time": "2026-11-07T17:59:04Z"
+    },
+    {
+      "path": "tests/screenshots/guides-florida-sirs-deadline-1440.png",
+      "hash": "9164a4cd0505f548b7385298c44f8b6b7fb9033adffb591b516f2d572e2552ca",
+      "mod_time": "2026-11-07T17:59:11Z"
+    },
+    {
+      "path": "tests/screenshots/guides-local-law-126-768.png",
+      "hash": "9f424a7f9f993b0ac651f1b65008988ee040aada1e992a3626ce5f132d0e9ca6",
+      "mod_time": "2026-11-07T17:59:13Z"
+    },
+    {
+      "path": "tests/screenshots/how-it-works-768.png",
+      "hash": "268d9eff59f90364480dc9655ae7a567420a0565c48f1cc6639e5491d5ffe88e",
+      "mod_time": "2026-11-07T17:58:59Z"
+    },
+    {
+      "path": ".dockerignore",
+      "hash": "f9af2e639a3a6783343b749c9c3f00b79666742b46477b9a1bf9d0925ee8d8a1",
+      "mod_time": "2026-11-07T17:48:57Z"
+    },
+    {
+      "path": "components/CTABox.tsx",
+      "hash": "6dcbdd9306bc275179cb901aa3948d0b08c8e89ddfb0bfa65f289322293aa170",
+      "mod_time": "2026-11-07T17:28:44Z"
+    },
+    {
+      "path": "content/types.ts",
+      "hash": "adcb7725b503a1bb96529a84e6bee6730d5064da6b222183cd43c34ba598688e",
+      "mod_time": "2026-11-07T17:41:34Z"
+    },
+    {
+      "path": "tests/screenshots/parking-garage-leads-390.png",
+      "hash": "3a9b3be0ce7037e81d4529b09fafdfd2d5e8068991a9e2964f212aebfd47ef6a",
+      "mod_time": "2026-11-07T17:59:03Z"
+    },
+    {
+      "path": "tests/screenshots/pricing-390.png",
+      "hash": "07e38f78da02cab0d9e28575bf312ad6eae640b49bc8c928c0c897f77669532a",
+      "mod_time": "2026-11-07T17:58:58Z"
+    },
+    {
+      "path": "components/CapabilityTable.tsx",
+      "hash": "82282ed9eae7c99dddafc719482d9499d1708acb899439b799bd45341fa837ff",
+      "mod_time": "2026-11-07T17:28:43Z"
+    },
+    {
+      "path": "scripts/mock-webhook.mjs",
+      "hash": "a0284750fb74f6b2483678f925922f11082c518e72cd77a20268e0badcb80f34",
+      "mod_time": "2026-11-07T17:48:56Z"
+    },
+    {
+      "path": "tests/screenshots/commercial-roofing-leads-1440.png",
+      "hash": "168101d99a52afc62fde924cfbcca5df32260d7f336f1ad42bdfe6fc75dd9910",
+      "mod_time": "2026-11-07T17:59:06Z"
+    },
+    {
+      "path": "tests/screenshots/guides-1440.png",
+      "hash": "f10fe0c0bd392c15082ccbdeaee0812dfbf7d4d9760a09ccbbf426e3642c6f1c",
+      "mod_time": "2026-11-07T17:59:00Z"
+    },
+    {
+      "path": "tests/screenshots/mold-remediation-leads-1440.png",
+      "hash": "78add5f371075f07cb2d5c6f8f959cf4d1b38ff368b396663c1bd36a8c71cef6",
+      "mod_time": "2026-11-07T17:59:05Z"
+    },
+    {
+      "path": "tests/screenshots/mold-remediation-leads-390.png",
+      "hash": "40228bc958ca617fc897dac9db48d163b803882160b68b6a7a5f5a08da8f7b46",
+      "mod_time": "2026-11-07T17:59:05Z"
+    },
+    {
+      "path": "README.md",
+      "hash": "afd876880906979a2d985a8130aa6fcbb5b459c362ac94fb448274f34c6cf165",
+      "mod_time": "2026-11-07T17:54:04Z"
+    },
+    {
+      "path": "app/guides/page.tsx",
+      "hash": "53d8641d1cd60ab0bc1b2c9e9afeee47dfbf705310abd17f2b7d2d78e1340073",
+      "mod_time": "2026-11-07T17:45:00Z"
+    },
+    {
+      "path": "app/og/route.tsx",
+      "hash": "bfc88ff79e90c3baf7ac23886115557c98d1bf64d9cfbde8e41d88258c4204a4",
+      "mod_time": "2026-11-07T17:41:38Z"
+    },
+    {
+      "path": "tests/screenshots/boiler-repair-leads-390.png",
+      "hash": "2f95307412774135a6537adb5cf2d024cf1025b5bc02940c9565b2c407fa69fa",
+      "mod_time": "2026-11-07T17:59:04Z"
+    },
+    {
+      "path": "tests/screenshots/construction-leads-390.png",
+      "hash": "fcfc139e29ef2e2783c4c3a3950aeca06058058904202793c4e72fe0a2020022",
+      "mod_time": "2026-11-07T17:59:07Z"
+    },
+    {
+      "path": "tests/screenshots/does-not-exist-1440.png",
+      "hash": "2b0ddc035e2b71cb5efa92f0d0a0dc168434e650d179c765ca8b8888ec071600",
+      "mod_time": "2026-11-07T17:59:19Z"
+    },
+    {
+      "path": "tests/screenshots/guides-fisp-cycle-10-deadlines-1440.png",
+      "hash": "5393fe17e6dd349a1ed6a135944b89a72467d7284862959be75cc82394787694",
+      "mod_time": "2026-11-07T17:59:09Z"
+    },
+    {
+      "path": "app/compare/page.tsx",
+      "hash": "89edb843a4e2ea2947848cc8dca498965ee21de0db70d398d133ee0a4ee92464",
+      "mod_time": "2026-11-07T17:56:43Z"
+    },
+    {
+      "path": "app/construction-leads/page.tsx",
+      "hash": "9dded97eb6d0fd4b5ac2092945da9aa66c8430665e0d9fa2eb61cad53f5edf01",
+      "mod_time": "2026-11-07T17:45:00Z"
+    },
+    {
+      "path": "components/Fact.tsx",
+      "hash": "10b83f4cff09267dfcca706271f6032c195fd92734fb13c81c474e44938a1d25",
+      "mod_time": "2026-11-07T17:28:42Z"
+    },
+    {
+      "path": "tests/screenshots/guides-florida-milestone-inspection-1440.png",
+      "hash": "e3517065937f079aa743ce05e2ea58dac6cd2ce57b683bdf6e64ce04210e02e3",
+      "mod_time": "2026-11-07T17:59:10Z"
+    },
+    {
+      "path": "tests/screenshots/guides-swarmp-vs-unsafe-768.png",
+      "hash": "3048747b1a59eef52047a66ab68ce89131444a943d2d2e1a85f5a444f8b6b249",
+      "mod_time": "2026-11-07T17:59:17Z"
+    },
+    {
+      "path": "tests/screenshots/terms-390.png",
+      "hash": "ac0b422122cbfb15b5019222d08ac360bdab9ef5f0697e8d22508c8a9470a9e0",
+      "mod_time": "2026-11-07T17:59:01Z"
+    },
+    {
+      "path": "tsconfig.json",
+      "hash": "be18523b23b78b6e1a876ddd107d330f0168bddf09d751b57e0b5edce69c66f3",
+      "mod_time": "2026-11-07T17:17:13Z"
+    },
+    {
+      "path": "app/guides/[slug]/page.tsx",
+      "hash": "d2ec884afb9b8f130e6e5e3a365fb082c7241b8e2f9a54d0fe0c7622ad928174",
+      "mod_time": "2026-11-07T17:44:59Z"
+    },
+    {
+      "path": "components/TrustTriplet.tsx",
+      "hash": "b51c39b17c55ed25c470a0d9e15fa56d41be01c359c8e96a8415ea929b910c00",
+      "mod_time": "2026-11-07T17:28:43Z"
+    },
+    {
+      "path": "content/guides/local-law-126.mdx",
+      "hash": "9e3ca9e2946807df5f3e07ec069c4258cc56838716d42a70fd15dd093972cabc",
+      "mod_time": "2026-11-07T17:52:09Z"
+    },
+    {
+      "path": "next-env.d.ts",
+      "hash": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b",
+      "mod_time": "2026-11-07T18:40:56Z"
+    },
+    {
+      "path": "tests/screenshots/florida-condo-leads-768.png",
+      "hash": "6c9d0781eb19415099c565f4f0155d7ecc1e7646cc05154a489e04a42ad470d8",
+      "mod_time": "2026-11-07T17:59:06Z"
+    },
+    {
+      "path": "tests/screenshots/mold-remediation-leads-768.png",
+      "hash": "f13ad4d47de1fbfe972f179917f268e7a7bea11074b52e3df6fcd0c7067e1a55",
+      "mod_time": "2026-11-07T17:59:05Z"
+    },
+    {
+      "path": "app/[slug]/page.tsx",
+      "hash": "b2c5abf3fa07e24197f2b81c11f119698c8fadbabc5e569076e7a6c0744b82eb",
+      "mod_time": "2026-11-07T17:41:36Z"
+    },
+    {
+      "path": "tests/screenshots/guides-local-law-11-390.png",
+      "hash": "07ad71ca22cf347c7a78ff294d8e049c38e2feae956d25abffc453511608efc2",
+      "mod_time": "2026-11-07T17:59:11Z"
+    },
+    {
+      "path": "tests/screenshots/pricing-768.png",
+      "hash": "1d5c5b6075b85d061c98c4d0b61957de03053b9974fead97a4d454835058755f",
+      "mod_time": "2026-11-07T17:58:59Z"
+    },
+    {
+      "path": "components/Logo.tsx",
+      "hash": "ac14ddea49ebfbe153c8f422ec985c5f99c17b3f9afc15b29636f2d3729a2ffe",
+      "mod_time": "2026-11-07T17:25:24Z"
+    },
+    {
+      "path": "components/StatHero.tsx",
+      "hash": "d3194b9f1d2a50b759986284445223b4816adea3b8b4786216126d3c41d3785c",
+      "mod_time": "2026-11-07T17:28:44Z"
+    },
+    {
+      "path": "tests/screenshots/free-sample-390.png",
+      "hash": "580d194e19608c0a993c5d8a545b487b58cb3536533ad6550ec5357496021c7b",
+      "mod_time": "2026-11-07T17:58:58Z"
+    },
+    {
+      "path": "tests/screenshots/guides-390.png",
+      "hash": "31e395b9ca9f8c6a7e8727f278743bf1fee9e6f282ca50a1d632ebb523996e20",
+      "mod_time": "2026-11-07T17:59:00Z"
+    },
+    {
+      "path": ".gitignore",
+      "hash": "e3b04d5dc5a8f23ff678fb40c825273de76eb30f21017f64191c0b6972d43c70",
+      "mod_time": "2026-11-07T17:59:40Z"
+    },
+    {
+      "path": "app/pricing/page.tsx",
+      "hash": "a883383cc534967c0440766ff9c7ac6ef137213e13150f74e37f39dde4956d69",
+      "mod_time": "2026-11-07T18:08:01Z"
+    },
+    {
+      "path": "components/Breadcrumbs.tsx",
+      "hash": "51e3315418cb9699bdc354c56e478ea2f7c62c7fb419dc5e798bc0466736cc23",
+      "mod_time": "2026-11-07T17:28:44Z"
+    },
+    {
+      "path": "components/Hero.tsx",
+      "hash": "5089c6ca2d7f79d3d6a842eb3f7824d92563bb99d6912a0bf00a3bd059a5e648",
+      "mod_time": "2026-11-07T17:28:41Z"
+    },
+    {
+      "path": "public/logo/lockup-horizontal-on-dark.svg",
+      "hash": "71ac10de6ff5b95a2fe0f20eafe5e055058bcbd82b02e0cd1a0834db95bea510",
+      "mod_time": "2026-11-07T17:21:59Z"
+    },
+    {
+      "path": "tests/screenshots/about-390.png",
+      "hash": "17c1e3147b4fa31814c538a885e51f26f9d59322715a79d2ebeb46df97cdde33",
+      "mod_time": "2026-11-07T17:58:59Z"
+    },
+    {
+      "path": "tests/screenshots/facade-restoration-leads-1440.png",
+      "hash": "cbee3d7bb80f4376c6579dfcb9ee8a748735d8c0f0375196dc12c7d9bf3c6319",
+      "mod_time": "2026-11-07T17:59:02Z"
+    },
+    {
+      "path": "tests/screenshots/privacy-390.png",
+      "hash": "170df7c1394e9663973e7155cbad517b5a068fe7caf97862f354274c7793dd36",
+      "mod_time": "2026-11-07T17:59:01Z"
+    },
+    {
+      "path": "components/Buttons.tsx",
+      "hash": "7cea1675a38e8b08f78a3c6d1abd02bee78c1a0cb379992f9459f65b54eda9a1",
+      "mod_time": "2026-11-07T17:28:41Z"
+    },
+    {
+      "path": "content/facts.ts",
+      "hash": "8828c4cfefd63ee886b957b672e091e93765cc8ff704d6037df042911c089fc1",
+      "mod_time": "2026-11-07T17:51:08Z"
+    },
+    {
+      "path": "content/guides/local-law-11.mdx",
+      "hash": "94a1073a2c9c48f7467f109ddbbf05795d0b4d35c84e54f6b9acdb278cd75297",
+      "mod_time": "2026-11-07T17:45:02Z"
+    },
+    {
+      "path": "docs/spec/COPY-DECK.md",
+      "hash": "81621b1792f3c0627d9b386d0d9f28b86f5ce368e576e3ee044b6eaa69ea92d2",
+      "mod_time": "2026-11-07T17:21:59Z"
+    },
+    {
+      "path": "tests/screenshots/florida-condo-leads-1440.png",
+      "hash": "ff9602212c0eda34e4b0080a1a0f6c168507e15dd9213b6a4f90fd3b7d763244",
+      "mod_time": "2026-11-07T17:59:07Z"
+    },
+    {
+      "path": "tests/screenshots/guides-local-law-126-1440.png",
+      "hash": "a803be9e5f54401652908c6ff0d9581ad1b65149e4a81695587fedb370eb2325",
+      "mod_time": "2026-11-07T17:59:13Z"
+    },
+    {
+      "path": "tests/screenshots/thanks-type-sample-trade-facade-1440.png",
+      "hash": "00d9561caf4535b010e4a82256747da46b0042fd6e8ad4bbc9afc8e31fdb6538",
+      "mod_time": "2026-11-07T17:59:19Z"
+    },
+    {
+      "path": ".env",
+      "hash": "24aacf903555bd1a7a00e6ef75985277d0faae7e36b61d50682f56115c19af20",
+      "mod_time": "2026-11-07T19:33:31Z"
+    },
+    {
+      "path": "content/guides/florida-milestone-inspection.mdx",
+      "hash": "d75640e4d1fd425d0567bb88b408bb2cdf1ccc1a5c480325d6142c421cc363e2",
+      "mod_time": "2026-11-07T17:53:15Z"
+    },
+    {
+      "path": "tests/screenshots/data-fisp-unsafe-buildings-768.png",
+      "hash": "50dea6d6a2777e5f812a341c229be8321befa09f8083ef7f8dbefbd1bce7293f",
+      "mod_time": "2026-11-07T17:59:17Z"
+    },
+    {
+      "path": "tests/screenshots/guides-768.png",
+      "hash": "f8adb789cf949583ef9d040487a8bd51fe70f10712e4ba5c6a7f679aef445bd5",
+      "mod_time": "2026-11-07T17:59:00Z"
+    },
+    {
+      "path": "components/SiteHeader.tsx",
+      "hash": "80ef14e6e691083aa40de94094c65507bdfe52ba3755dce8fa285e647c9ca585",
+      "mod_time": "2026-11-07T17:25:24Z"
+    },
+    {
+      "path": "package.json",
+      "hash": "2360faafc2e542875cd89efefb02e7f4e89ad96eed22dae7b1b4677e6f6d4741",
+      "mod_time": "2026-11-07T17:48:57Z"
+    },
+    {
+      "path": "tests/screenshots/data-fisp-unsafe-buildings-390.png",
+      "hash": "e9cd23054da77e0def8ba04ad006309447554ed2cc12919e33cd1e08a8f90ae6",
+      "mod_time": "2026-11-07T17:59:17Z"
+    },
+    {
+      "path": "app/privacy/page.tsx",
+      "hash": "bab3153b212b8b6317e74643ea8aaf2bbf89c44928aaaaf340f33e1d7ffde78a",
+      "mod_time": "2026-11-07T18:08:01Z"
+    },
+    {
+      "path": "components/AnswerBlock.tsx",
+      "hash": "a261d10e5d81787a2936eb043d16f1ed22c72aca8ec5a1f4465b1bca6a5b298e",
+      "mod_time": "2026-11-07T17:28:42Z"
+    },
+    {
+      "path": "content/guides/nyc-boiler-inspection.mdx",
+      "hash": "1a5a4b61110947758f3df96fe17ed2fd8a701c86ead4ac37202e289ff48794e2",
+      "mod_time": "2026-11-07T17:53:13Z"
+    },
+    {
+      "path": "tests/screenshots/how-it-works-390.png",
+      "hash": "a3cf6ccbfce6fefdeb68294836b523b39db97475fadda50699cb31ea003b2ed3",
+      "mod_time": "2026-11-07T17:58:59Z"
+    },
+    {
+      "path": "tests/screenshots/terms-1440.png",
+      "hash": "bc6e65181bc447368aa2f826228f0b6811360bdf3e171789a0e688d9548f86e5",
+      "mod_time": "2026-11-07T17:59:01Z"
+    },
+    {
+      "path": "Dockerfile",
+      "hash": "aa1ae712575f2d5532d60b0312e068cd914f40c9639871e093cde0204f0a85db",
+      "mod_time": "2026-11-07T17:48:56Z"
+    },
+    {
+      "path": "app/page.tsx",
+      "hash": "f7ed621d67f2170a1e93223e657aaaac9ba2efab0ffe65f5bb4b3f39b771eb32",
+      "mod_time": "2026-11-07T17:41:36Z"
+    },
+    {
+      "path": "components/NeedPayoffBand.tsx",
+      "hash": "ad2f661ea968a91ebcc4afa6d7a86ce21eac78ffc0a6cea0d481139ce5b3ed0f",
+      "mod_time": "2026-11-07T17:28:43Z"
+    },
+    {
+      "path": "components/Section.tsx",
+      "hash": "02e1d1c2fc74e099b38a1823447a29fe85f06d3012f54d6e838d629c538dbbff",
+      "mod_time": "2026-11-07T17:28:37Z"
+    },
+    {
+      "path": "content/site.ts",
+      "hash": "9eec3f42fb063be5d70f6315d565f8a1417d0b35c30eb915cdf0e65b250a90e2",
+      "mod_time": "2026-11-07T18:08:01Z"
+    },
+    {
+      "path": "lib/seo.ts",
+      "hash": "f7c822d22e130740e94915224d7182195db02052ee8c361556f6cd5b7ae094b7",
+      "mod_time": "2026-11-07T17:25:24Z"
+    },
+    {
+      "path": "public/logo/mark-on-dark.svg",
+      "hash": "d5e1f915e03e9aef989b39196cd23a06362116d7e43d81c9df257cbaf7835e3d",
+      "mod_time": "2026-11-07T17:21:59Z"
+    },
+    {
+      "path": "tests/screenshots/guides-florida-milestone-inspection-390.png",
+      "hash": "2c164712ab97ff9b728eb056e2a6c2d0aa93417d065f9b764f3b5f855d6a7138",
+      "mod_time": "2026-11-07T17:59:09Z"
+    },
+    {
+      "path": "app/llms.txt/route.ts",
+      "hash": "517b322c04378566f6af5e47c725290c275e578b27e12dae76d27ed219a56fa2",
+      "mod_time": "2026-11-07T17:41:39Z"
+    },
+    {
+      "path": "app/not-found.tsx",
+      "hash": "74f202c4fda5e1b6512435048b61aaa35f744099714b9b5e42d318d78fba4f79",
+      "mod_time": "2026-11-07T17:41:38Z"
+    },
+    {
+      "path": "content/guides/swarmp-vs-unsafe.mdx",
+      "hash": "3e54677280c06d1b63afcad35fd84cceb2aff9c78d0cb79719af50d71efa05e7",
+      "mod_time": "2026-11-07T17:53:32Z"
+    },
+    {
+      "path": "public/logo/app-icon-512.png",
+      "hash": "e3a896de7ec5ab9f4f65b2298aff35b2e2ac2f31d31795ab0f1bf08be69c2bd1",
+      "mod_time": "2026-11-07T17:21:59Z"
+    },
+    {
+      "path": "tests/screenshots/construction-leads-768.png",
+      "hash": "3a8a4cce7c21730945c6c808a818705cf648dfa993c4d9ee085cc98ff1bb5d8b",
+      "mod_time": "2026-11-07T17:59:07Z"
+    },
+    {
+      "path": "tests/screenshots/does-not-exist-390.png",
+      "hash": "a029a7676176db1859c362d6d28a5c87e20de2b7c506d91c5b589226a920e922",
+      "mod_time": "2026-11-07T17:59:19Z"
+    },
+    {
+      "path": "tests/screenshots/gas-piping-leads-1440.png",
+      "hash": "97cf47c46d7e0b56c6f5fef31531b32f0dd17840cf571164ecd653b7f4d3f056",
+      "mod_time": "2026-11-07T17:59:04Z"
+    },
+    {
+      "path": "tests/screenshots/gas-piping-leads-768.png",
+      "hash": "0740ac09be13f425080aa3a8c82219552e2d9531a57d46cd8c6f39a0ffb633df",
+      "mod_time": "2026-11-07T17:59:04Z"
+    },
+    {
+      "path": "app/data/[slug]/page.tsx",
+      "hash": "dd5d9e06a5e62455edb660462ab4fe92f6e3df0da776dc78209bc984bda2e082",
+      "mod_time": "2026-11-07T17:45:01Z"
+    },
+    {
+      "path": "app/data/page.tsx",
+      "hash": "a918041ca62cadb0aedbb5b0bbc0196f5b6a5af9065c216c07740958f9c1599d",
+      "mod_time": "2026-11-07T17:56:43Z"
+    },
+    {
+      "path": "tests/screenshots/commercial-roofing-leads-390.png",
+      "hash": "eb84f8717b9a0bb730333f94b4cb340c5452952790f62dff001f204e896cb39c",
+      "mod_time": "2026-11-07T17:59:06Z"
+    },
+    {
+      "path": "tests/screenshots/guides-local-law-152-390.png",
+      "hash": "6b1c3dc637e5c8d6872c4ab9ebc24d17f72fdf333dd96082644e5c260acb31f9",
+      "mod_time": "2026-11-07T17:59:14Z"
+    },
+    {
+      "path": "tests/screenshots/privacy-768.png",
+      "hash": "dd877c609e214e280300da8c9124f7ab5704c8658130dd0abe79cd43eaf5849d",
+      "mod_time": "2026-11-07T17:59:02Z"
+    },
+    {
+      "path": "app/layout.tsx",
+      "hash": "b2f4dffd6ba5153cd8ae641c0dd558f62cb551938cb9e361a0bbb81c076820d7",
+      "mod_time": "2026-11-07T17:25:25Z"
+    },
+    {
+      "path": "data/stats/fisp.json",
+      "hash": "48510efffe839cb23c17da2fde3d7c79c73c9ed77cf0cafb70c376cf8374d7e0",
+      "mod_time": "2026-11-07T17:35:37Z"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "hash": "870f1adccecf3051cbcd9fd307cef51d7633cf510979c181a81f4b1797273493",
+      "mod_time": "2026-11-07T17:17:13Z"
+    },
+    {
+      "path": "test-results/.last-run.json",
+      "hash": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "mod_time": "2026-11-07T18:41:14Z"
+    },
+    {
+      "path": "tests/screenshots/guides-florida-milestone-inspection-768.png",
+      "hash": "18568cde92ebca32783d9d4e47abcbeff8c0161807ff0ff0dcd5fc3eb4b8a1d9",
+      "mod_time": "2026-11-07T17:59:09Z"
+    },
+    {
+      "path": "tests/screenshots/guides-florida-sirs-deadline-390.png",
+      "hash": "7b036a29b5d9ad7ec19feebf71ed0ac3235ccff9a87d80910702922f07980b22",
+      "mod_time": "2026-11-07T17:59:10Z"
+    },
+    {
+      "path": "tests/screenshots/guides-florida-sirs-deadline-768.png",
+      "hash": "f05f25901f39e73d9d377ca89f31a95c9fa5c1f2a23135adf05196b8c7353846",
+      "mod_time": "2026-11-07T17:59:10Z"
+    },
+    {
+      "path": "tests/screenshots/guides-local-law-11-penalties-768.png",
+      "hash": "ff41a8a6394d90cd3cac73c9320b05ae5bd3b030c973e2fcfe8a58e4157d9229",
+      "mod_time": "2026-11-07T17:59:12Z"
+    },
+    {
+      "path": "app/sitemap.ts",
+      "hash": "2c3636da423aa27abb34793bd9212177a8a45fc83a0a5e9d034578139ef75b0c",
+      "mod_time": "2026-11-07T17:41:38Z"
+    },
+    {
+      "path": "components/FeedCard.tsx",
+      "hash": "cf9ad17e8156389d2c94d56b8cc47a74b4ddbb2d4a89aa8cda56c32ea0746f55",
+      "mod_time": "2026-11-07T17:28:43Z"
+    },
+    {
+      "path": "content/guides/local-law-152.mdx",
+      "hash": "63e280b14c126350ebc45f39fcfba2686db4a6bd9a7b27e505a18162740310cd",
+      "mod_time": "2026-11-07T17:54:28Z"
+    },
+    {
+      "path": "lib/schema.ts",
+      "hash": "e91f14e1db9aeda1657c97d8837ab898fd4efa855c482361557ef423c19d3325",
+      "mod_time": "2026-11-07T17:25:24Z"
+    },
+    {
+      "path": "tests/screenshots/commercial-roofing-leads-768.png",
+      "hash": "4d0eea81d006b0104626f9eece2f397fb182bf2f296e3fb25d7c814c126c37ac",
+      "mod_time": "2026-11-07T17:59:06Z"
+    },
+    {
+      "path": "tests/screenshots/compare-1440.png",
+      "hash": "3819e58b414e930ae0bc089a40d5fecd54799b37278bb6e246276db9d59d3081",
+      "mod_time": "2026-11-07T17:59:01Z"
+    },
+    {
+      "path": "tests/screenshots/guides-nyc-boiler-inspection-390.png",
+      "hash": "096d55dbc173f48f8bec57a4c782b2185a2330166e52b810cc889da57e2c7589",
+      "mod_time": "2026-11-07T17:59:15Z"
+    },
+    {
+      "path": "tests/screenshots/guides-nyc-boiler-inspection-768.png",
+      "hash": "35ef4a1da96a30a0d8ed7aad232556fd3b75eb952d74ce987faf97dbc5d07422",
+      "mod_time": "2026-11-07T17:59:15Z"
+    },
+    {
+      "path": "content/compare.ts",
+      "hash": "5288d77ff72c72bc5ef22acc053e8850525fa2bdf7230526a7a842f26b2f61b4",
+      "mod_time": "2026-11-07T17:41:35Z"
+    },
+    {
+      "path": "playwright.config.ts",
+      "hash": "97f0cce0748e5c88ddebea1c7414e70c7c83e4a827b3aff1a629facdf41867cc",
+      "mod_time": "2026-11-07T18:11:42Z"
+    },
+    {
+      "path": "tests/screenshots/compare-768.png",
+      "hash": "2431031fea5ffb66d54a10cf19f9e3b6e637e9cc10e55e648aceb57fbe46df96",
+      "mod_time": "2026-11-07T17:59:01Z"
+    },
+    {
+      "path": "tests/screenshots/free-sample-768.png",
+      "hash": "894cf4b0bc0d1c09a33cd1486b48e28cde6f6e8149fd7ffaf83777c5ef53005a",
+      "mod_time": "2026-11-07T17:58:58Z"
+    },
+    {
+      "path": "tests/screenshots/guides-local-law-152-768.png",
+      "hash": "fb5e1bc0ce216f0e061d623663d2151dbe235f66c770d298937c3b4a06b1374d",
+      "mod_time": "2026-11-07T17:59:14Z"
+    },
+    {
+      "path": "tests/screenshots/guides-swarmp-vs-unsafe-390.png",
+      "hash": "b7263aea69af6958039937433c8c881426ef8b9b795eaacbed39ca5650f266ca",
+      "mod_time": "2026-11-07T17:59:16Z"
+    },
+    {
+      "path": "tests/screenshots/privacy-1440.png",
+      "hash": "765c63b48267d062182c55e85b5966a172598d6768ed4734cc92c7049eb55a99",
+      "mod_time": "2026-11-07T17:59:02Z"
+    },
+    {
+      "path": "components/JsonLd.tsx",
+      "hash": "88709817d236e80dbf83401ad616ebbf235c0b68d1ab0723b79dc6e5dccc6774",
+      "mod_time": "2026-11-07T17:25:24Z"
+    },
+    {
+      "path": "content/guides/local-law-11-penalties.mdx",
+      "hash": "db708d8c9f6a35996733aee4aeeac548bbd0a4e7c7bd5f2456aa8b6a5f717427",
+      "mod_time": "2026-11-07T17:54:28Z"
+    },
+    {
+      "path": "docs/spec/KEYWORDS.csv",
+      "hash": "bc061ee052e3b68763f348ac2df206f3a7bb19970f46e6cb43db8014855543a7",
+      "mod_time": "2026-11-07T17:21:59Z"
+    },
+    {
+      "path": "package-lock.json",
+      "hash": "884630e922ef73da28096d78eb0313569ffe0e11acdcea02c9840a1121a13d11",
+      "mod_time": "2026-11-07T17:45:11Z"
+    },
+    {
+      "path": "public/logo/lockup-horizontal.svg",
+      "hash": "6bceab02d7025b13124e8b01d07803873ed130b87ddbbac95126319087f3923a",
+      "mod_time": "2026-11-07T17:21:59Z"
+    },
+    {
+      "path": "tests/screenshots/free-sample-1440.png",
+      "hash": "6d342d943cdbca9ddfb0b847ab2bbef3a489aaea8f53449bad8b1159043d895f",
+      "mod_time": "2026-11-07T17:58:58Z"
+    },
+    {
+      "path": "tests/screenshots/guides-local-law-126-390.png",
+      "hash": "5c89125d78e81790daeaaec103fa0357228f3bb2425644c35116651f024efcce",
+      "mod_time": "2026-11-07T17:59:13Z"
+    },
+    {
+      "path": "tests/screenshots/guides-swarmp-vs-unsafe-1440.png",
+      "hash": "5327217ad30be850bfc01118231d40b940b88d131e94d11032be9e5eea9c1f37",
+      "mod_time": "2026-11-07T17:59:17Z"
+    },
+    {
+      "path": "app/favicon.png",
+      "hash": "748432fe0128b77216b57c957924b2891af4a07796555449ae46f84991f55b75",
+      "mod_time": "2026-11-07T17:21:59Z"
+    },
+    {
+      "path": "components/BarChart.tsx",
+      "hash": "313e6718c2a97c38db545b0e5cb64243c969d759333e72a50ca578b47384a395",
+      "mod_time": "2026-11-07T17:28:44Z"
+    },
+    {
+      "path": "components/SourcesList.tsx",
+      "hash": "0cccc6129fcb2b089a7df52121f67390263223e1e1defc05ca1855b0b4e8cd23",
+      "mod_time": "2026-11-07T17:28:44Z"
+    },
+    {
+      "path": "content/guides/fisp-cycle-10-deadlines.mdx",
+      "hash": "90440b8aa42595a567a253233636d59fb01e2605703c75f12e86bfbbeedef020",
+      "mod_time": "2026-11-07T17:52:29Z"
+    },
+    {
+      "path": "docs/superpowers/guide-brief.md",
+      "hash": "37765a5f3bca14e175c57a4cedcf98e92f510a6642bb789aabb9344510664439",
+      "mod_time": "2026-11-07T17:48:55Z"
+    },
+    {
+      "path": "lib/placeholders.ts",
+      "hash": "4385bcd24e9070215b934132a3bc166f75750b83d12bb1e4a80dfb8960d394bd",
+      "mod_time": "2026-11-07T17:23:03Z"
+    },
+    {
+      "path": "tests/screenshots/guides-sidewalk-shed-rules-390.png",
+      "hash": "2ff139aa882323df820ef860d1a6165c98de13e645e7e0d7cf94c15a0808416a",
+      "mod_time": "2026-11-07T17:59:15Z"
+    },
+    {
+      "path": "tests/screenshots/home-768.png",
+      "hash": "629c0304b758646463868d3084012ce93991543541b4d0fb1f5857df928ce7e7",
+      "mod_time": "2026-11-07T17:58:57Z"
+    },
+    {
+      "path": "components/DarkBand3.tsx",
+      "hash": "56dcc952b16b9f2f6acd253d0bd5feb94412c30860306f09ca67a9ad8ebf4015",
+      "mod_time": "2026-11-07T17:28:42Z"
+    },
+    {
+      "path": "content/feeds.ts",
+      "hash": "82883d8c6e88c8d0e282be7dbccbdf96e5578d86f775d33bdd825b5a919292c0",
+      "mod_time": "2026-11-07T17:56:43Z"
+    },
+    {
+      "path": "content/registry.ts",
+      "hash": "264c933bb00421fd3a8a27e988bc0bcdd23506a3ef1575afb61cc100bb848255",
+      "mod_time": "2026-11-07T17:56:43Z"
+    },
+    {
+      "path": "tests/screenshots/data-1440.png",
+      "hash": "d4779786ce2e719ef4e2051a645412901665351e220093e32c4ac265b2bf0362",
+      "mod_time": "2026-11-07T17:59:01Z"
+    },
+    {
+      "path": "tests/screenshots/guides-fisp-cycle-10-deadlines-768.png",
+      "hash": "c2bdfd127bf77e676c42c3e11ab58a0222dcbd594bafd46a9911f92700a437a3",
+      "mod_time": "2026-11-07T17:59:08Z"
+    },
+    {
+      "path": "tests/screenshots/guides-local-law-11-1440.png",
+      "hash": "53993ca54ef384ffb75e4ae5f70b8928cbc4bb317b742139fe7c1945df5f5a1a",
+      "mod_time": "2026-11-07T17:59:12Z"
+    },
+    {
+      "path": "tests/screenshots/pricing-1440.png",
+      "hash": "b32f15766c00c9fdb9ed62fb366470e82f143c89484e80fd10886ec8a940c373",
+      "mod_time": "2026-11-07T17:58:59Z"
+    },
+    {
+      "path": ".env.example",
+      "hash": "f843d9200704eed5b12148cc59de1a7fd1f920c6af06b5dfa615996ea46346a8",
+      "mod_time": "2026-11-07T18:08:01Z"
+    },
+    {
+      "path": "components/DeadlineRows.tsx",
+      "hash": "9e9eb519203bdab30b3ad3ca99de98c707f1ffc2ba4645db40037d4781d5ccf6",
+      "mod_time": "2026-11-07T17:28:42Z"
+    },
+    {
+      "path": "tests/screenshots/guides-local-law-11-768.png",
+      "hash": "7b6f7c456f2f3fcd3f899cc1a881b515abc83e9a1e80d307668bda82252b33d6",
+      "mod_time": "2026-11-07T17:59:11Z"
+    },
+    {
+      "path": "tests/screenshots/terms-768.png",
+      "hash": "19357972331196f1d6ed6370125052793f69bfa745ffd975719c42ae3ebc2c85",
+      "mod_time": "2026-11-07T17:59:01Z"
+    },
+    {
+      "path": "app/compare/[slug]/page.tsx",
+      "hash": "2a0ef76d6e8c30c050901189fa0e51a439b023da0b46523336ca25a61a36f817",
+      "mod_time": "2026-11-07T17:45:02Z"
+    },
+    {
+      "path": "app/how-it-works/page.tsx",
+      "hash": "d898b5fa962fe0956b185c9819819b91a902ec60b707acf7709f2c742819be55",
+      "mod_time": "2026-11-07T17:41:37Z"
+    },
+    {
+      "path": "components/Byline.tsx",
+      "hash": "5466530330b6008ff560547919b892870c6ebb562480315f4d5d22511c14bdbb",
+      "mod_time": "2026-11-07T17:28:45Z"
+    },
+    {
+      "path": "public/logo/mark.svg",
+      "hash": "d18f8b33965e78ee18fecb082cf445bad6aa72b4065ace7cbf1cd1b6e97d6d17",
+      "mod_time": "2026-11-07T17:21:59Z"
+    },
+    {
+      "path": "public/logo/wordmark.svg",
+      "hash": "4b42a70fbbde0f5c41034a629b9e1c8aa93839f8a7aa56efd170cbeca6b5ff79",
+      "mod_time": "2026-11-07T17:21:59Z"
+    },
+    {
+      "path": "tests/screenshots/about-768.png",
+      "hash": "855d1cb8023a42ec745cce3ca453606c568613a44fb910db2332fea0213a2031",
+      "mod_time": "2026-11-07T17:59:00Z"
+    },
+    {
+      "path": "tests/screenshots/guides-nyc-boiler-inspection-1440.png",
+      "hash": "136b3b85e6b8bcee76a8fe596ae50b121585cffe0624ddc68515a93abad5807f",
+      "mod_time": "2026-11-07T17:59:15Z"
+    },
+    {
+      "path": "tests/screenshots/thanks-type-sample-trade-facade-390.png",
+      "hash": "574fd0764cc6d3980ad0c5d3c0944bd66f8cdd04de83635bcbadc8a021f4941c",
+      "mod_time": "2026-11-07T17:59:18Z"
+    }
+  ],
+  "fact_count": 786,
+  "insight_count": 13,
+  "enola_version": "0.4.12",
+  "snapshot_id": "sha256:39bebad4790f98000bfd94bc4aaa9ab9b2b65ba8adfd15d5f244c067cde79175",
+  "git": {
+    "ref": "main",
+    "commit": "35dae715ee0ad44df4d21e1f7e8c3da456122178",
+    "dirty": false,
+    "remote": "github.com/nipstar/building-sauce"
+  },
+  "config_hash": "sha256:12cbb6c9d3b099d95fbadb1d4bbe736a4eeace82c3bfc868b4395916ef097edd",
+  "extractor_version": "v259",
+  "files_seen": 209,
+  "files_parsed": 80,
+  "source_bytes": 343885,
+  "files_skipped": 2,
+  "dirs_skipped": 3,
+  "skipped_sample": [
+    ".git/ (glob: **/.git/**)",
+    ".next/ (glob: .next/**)",
+    "node_modules/ (glob: **/node_modules/**)",
+    "tests/form.spec.ts (glob: **/*.spec.ts)",
+    "tests/screenshots.spec.ts (glob: **/*.spec.ts)"
+  ],
+  "ignore_glob_hash": "sha256:7523cc6397a498e151125a682d28fbf6df20c6f51f6dfaf18fd8f5239a20d2d8",
+  "heuristic_insights": 12,
+  "coverage": {
+    "services_total": 0,
+    "coverage_gaps": 0,
+    "unresolved_edges": 0,
+    "extractors_reporting": 1,
+    "extraction_unresolved": 126
+  },
+  "census": {
+    "files_walked": 211,
+    "parsed": 80,
+    "excluded_by_ignore": 2,
+    "excluded_by_kind": 128,
+    "excluded_kinds": {
+      "(no extension)": 1,
+      ".css": 1,
+      ".csv": 1,
+      ".dockerignore": 1,
+      ".env": 1,
+      ".example": 1,
+      ".gitignore": 1,
+      ".json": 5,
+      ".mdx": 11,
+      ".png": 100,
+      ".svg": 5
+    },
+    "skipped_with_cause": 1,
+    "top_skip_causes": [
+      {
+        "cause": "claimed by manifests, no facts emitted",
+        "count": 1
+      }
+    ]
+  },
+  "output_hashes": {
+    "facts.jsonl": "sha256:0647921632a62ffa5522216cc6cfac7e4f4db0bd986cb9ec53f9f5be239ac365",
+    "insights.json": "sha256:40e9059fd8ec14b9f093ca14f46acc2062928d3c05b3c19ded27f6828ea27770",
+    "llm_context.md": "sha256:4dc74e78b6b2af446f701221dbbd84ab7953d2b44e8b515f158382229b21a76f"
+  },
+  "unseen": {
+    "files_excluded_by_ignore": 2,
+    "dirs_excluded_by_ignore": 3,
+    "outside_graph": {
+      "imports": 307
+    },
+    "dead_exemptions": 0,
+    "dynamic_feature_classes": 0
+  }
+}

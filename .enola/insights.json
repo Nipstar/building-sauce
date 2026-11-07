@@ -1,0 +1,536 @@
+[
+  {
+    "title": "Cyclic dependency detected (2 modules)",
+    "source": "cycles",
+    "description": "The following modules form a dependency cycle: content -\u003e lib -\u003e content. This can cause initialization issues, make refactoring harder, and indicates tight coupling.",
+    "confidence": 1,
+    "evidence": [
+      {
+        "fact": "content",
+        "detail": "module \"content\" is part of the cycle",
+        "fact_id": "2ea2b54f7a929f7b2c94469c729fa971"
+      },
+      {
+        "fact": "lib",
+        "detail": "module \"lib\" is part of the cycle",
+        "fact_id": "ca4db190f6f02c460ccb44547695a86e"
+      }
+    ],
+    "suggested_actions": [
+      "Introduce an interface to break the cycle",
+      "Extract shared types to a separate package",
+      "Consider merging tightly coupled modules"
+    ]
+  },
+  {
+    "title": "Architecture pattern: nextjs",
+    "source": "layers",
+    "description": "Recognised nextjs from directory names: 22 of 25 typescript modules classified. All 139 imports between ordered layers run inward; none run against the order.",
+    "confidence": 0.88,
+    "evidence": [
+      {
+        "fact": "app",
+        "detail": "module \"app\" maps to layer \"pages\"",
+        "fact_id": "634676f2c0363b458a31bead16cc0f5f"
+      },
+      {
+        "fact": "app/[slug]",
+        "detail": "module \"app/[slug]\" maps to layer \"pages\"",
+        "fact_id": "9762514ac81e88e37b019b3c6eb4c29e"
+      },
+      {
+        "fact": "app/about",
+        "detail": "module \"app/about\" maps to layer \"pages\"",
+        "fact_id": "35a7c55ac6ded4d02f5dda6bb06ec6e0"
+      },
+      {
+        "fact": "app/api/lead",
+        "detail": "module \"app/api/lead\" maps to layer \"pages\"",
+        "fact_id": "8b63e97e8494039b647acb6f9f220945"
+      },
+      {
+        "fact": "app/compare",
+        "detail": "module \"app/compare\" maps to layer \"pages\"",
+        "fact_id": "3426acf72c668c574d84e89832c69fad"
+      },
+      {
+        "fact": "app/compare/[slug]",
+        "detail": "module \"app/compare/[slug]\" maps to layer \"pages\"",
+        "fact_id": "ab5abeb95ed2e1b3c7955993bc730259"
+      },
+      {
+        "fact": "app/construction-leads",
+        "detail": "module \"app/construction-leads\" maps to layer \"pages\"",
+        "fact_id": "ba0e6d3104efef17096f1935244d6105"
+      },
+      {
+        "fact": "app/data",
+        "detail": "module \"app/data\" maps to layer \"pages\"",
+        "fact_id": "11741e55da74be67bf420d22fde47128"
+      },
+      {
+        "fact": "app/data/[slug]",
+        "detail": "module \"app/data/[slug]\" maps to layer \"pages\"",
+        "fact_id": "53e0d7d6a04bc7ddbd8118b35e84a032"
+      },
+      {
+        "fact": "app/data/[slug]/download",
+        "detail": "module \"app/data/[slug]/download\" maps to layer \"pages\"",
+        "fact_id": "272825ea7092edf2fa96fb1e63f45a1f"
+      },
+      {
+        "fact": "app/free-sample",
+        "detail": "module \"app/free-sample\" maps to layer \"pages\"",
+        "fact_id": "158d15257302f16188efedd598680951"
+      },
+      {
+        "fact": "app/guides",
+        "detail": "module \"app/guides\" maps to layer \"pages\"",
+        "fact_id": "db4f349b633813bdb2c47a705c76e198"
+      },
+      {
+        "fact": "app/guides/[slug]",
+        "detail": "module \"app/guides/[slug]\" maps to layer \"pages\"",
+        "fact_id": "b468c61e85b5dc7d5aa22abf80b68d62"
+      },
+      {
+        "fact": "app/how-it-works",
+        "detail": "module \"app/how-it-works\" maps to layer \"pages\"",
+        "fact_id": "7fd3304d52a0e9759621745868ab55e6"
+      },
+      {
+        "fact": "app/llms.txt",
+        "detail": "module \"app/llms.txt\" maps to layer \"pages\"",
+        "fact_id": "327fb9718b69833fd9fff030b0181475"
+      },
+      {
+        "fact": "app/og",
+        "detail": "module \"app/og\" maps to layer \"pages\"",
+        "fact_id": "29fdcbc14b354d236bcd75976c08c460"
+      },
+      {
+        "fact": "app/pricing",
+        "detail": "module \"app/pricing\" maps to layer \"pages\"",
+        "fact_id": "8012d725230a5b4afea1b60c4eb3c03d"
+      },
+      {
+        "fact": "app/privacy",
+        "detail": "module \"app/privacy\" maps to layer \"pages\"",
+        "fact_id": "930f2215d522f4b2ca77e6400e59f1f3"
+      },
+      {
+        "fact": "app/terms",
+        "detail": "module \"app/terms\" maps to layer \"pages\"",
+        "fact_id": "6dc430f48ce1b821c7393c6b988afbf1"
+      },
+      {
+        "fact": "app/thanks",
+        "detail": "module \"app/thanks\" maps to layer \"pages\"",
+        "fact_id": "7c029cde677479fb0cf6eaf04db1d126"
+      },
+      {
+        "fact": "components",
+        "detail": "module \"components\" maps to layer \"components\"",
+        "fact_id": "2bc5978bc72343fc220e7cea7df3c1f8"
+      },
+      {
+        "fact": "lib",
+        "detail": "module \"lib\" maps to layer \"lib\"",
+        "fact_id": "ca4db190f6f02c460ccb44547695a86e"
+      }
+    ],
+    "suggested_actions": [
+      "Ensure new code follows the detected layer structure",
+      "Review cross-layer dependencies for violations"
+    ],
+    "informational": true,
+    "metrics": {
+      "cohort_languages": [
+        "typescript"
+      ],
+      "imports_against": 0,
+      "imports_inward": 139,
+      "imports_same_level": 31,
+      "layer_examples": {
+        "components": "components",
+        "lib": "lib",
+        "pages": "app"
+      },
+      "layer_levels": {
+        "components": 2,
+        "lib": 0,
+        "pages": 3
+      },
+      "layers_ordered": [
+        "pages",
+        "components",
+        "lib"
+      ],
+      "layers_unordered": null,
+      "modules_classified": 22,
+      "modules_graded": 22,
+      "modules_scanned": 25
+    }
+  },
+  {
+    "title": "scripts calls 3 outbound endpoint(s)",
+    "source": "domain",
+    "description": "scripts issues HTTP calls to 3 distinct endpoint(s) that no route in this repository serves, so they go to a third party or a sibling service. This is the dependency that breaks when the other side changes, and it is not visible from this repository's own routes.",
+    "confidence": 0.9,
+    "evidence": [
+      {
+        "file": "scripts/check-copy.ts",
+        "fact": "/llms.txt",
+        "detail": "GET called from here",
+        "line": 65,
+        "fact_id": "6bfd42f1d0c6bebbab180fb46daef380"
+      },
+      {
+        "file": "scripts/check-copy.ts",
+        "fact": "/robots.txt",
+        "detail": "GET called from here",
+        "line": 67,
+        "fact_id": "270f575998e43f020f74dc96bd2ab6be"
+      },
+      {
+        "file": "scripts/check-copy.ts",
+        "fact": "/sitemap.xml",
+        "detail": "GET called from here",
+        "line": 63,
+        "fact_id": "b7c9fc24182662a2ac2d0df2e56e20c4"
+      }
+    ]
+  },
+  {
+    "title": "High fan-in symbol: content.usDate (13 dependents)",
+    "source": "god-class",
+    "description": "\"content.usDate\" is depended upon by 13 other symbols — well above the repo average. High fan-in concentrates change risk: edits here ripple across many call sites, and it often indicates a missing or overly broad abstraction.",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "file": "content/site.ts",
+        "symbol": "content.usDate",
+        "detail": "13 symbols depend on this",
+        "line": 111,
+        "fact_id": "ae727b82ba07b2028bfdf6a11c486acb"
+      },
+      {
+        "symbol": "app/compare/[slug].ComparePage",
+        "detail": "depends on content.usDate",
+        "fact_id": "a895e8b3969f8a214e7e087c284af4d6"
+      },
+      {
+        "symbol": "app/data.DataIndex",
+        "detail": "depends on content.usDate",
+        "fact_id": "3edf36708fecdc847f52882ed7f95c13"
+      },
+      {
+        "symbol": "app/data/[slug].DataPage",
+        "detail": "depends on content.usDate",
+        "fact_id": "abf18b3ffe20a5dc88bd3d61895e191d"
+      },
+      {
+        "symbol": "app/guides.GuidesIndex",
+        "detail": "depends on content.usDate",
+        "fact_id": "207d9a66b78e4828b85ea21a151c5e29"
+      },
+      {
+        "symbol": "app/privacy.PrivacyPage",
+        "detail": "depends on content.usDate",
+        "fact_id": "a985ae3c8def178391c8752e31261ed0"
+      },
+      {
+        "symbol": "app/terms.TermsPage",
+        "detail": "depends on content.usDate",
+        "fact_id": "0e812f958409d6e4bf5b42f986300581"
+      },
+      {
+        "symbol": "components.AnswerBlock",
+        "detail": "depends on content.usDate",
+        "fact_id": "4cbed661db7cb8b78cd57052bc3ce88f"
+      },
+      {
+        "symbol": "components.Byline",
+        "detail": "depends on content.usDate",
+        "fact_id": "19e8c85264b3900207f9b4cf43484ef4"
+      }
+    ],
+    "suggested_actions": [
+      "Split the symbol along distinct responsibilities its callers use",
+      "Introduce narrower interfaces so callers depend only on what they need",
+      "Stabilize its public contract to limit churn for dependents"
+    ]
+  },
+  {
+    "title": "Call-graph hotspot: content.buildRegistry (fan-in 4, fan-out 8)",
+    "source": "hotspots",
+    "description": "\"content.buildRegistry\" is a pinch point: 4 symbols call into it and it calls out to 8 others, so a large share of call chains pass through it (degree-centrality proxy for betweenness). Such chokepoints are high-risk to change and high-value to test.",
+    "confidence": 0.7,
+    "evidence": [
+      {
+        "file": "content/registry.ts",
+        "symbol": "content.buildRegistry",
+        "detail": "fan-in 4 × fan-out 8 = score 32",
+        "line": 159,
+        "fact_id": "1164ccf1902a602de28530d05aabc7e0"
+      },
+      {
+        "symbol": "app/data.DataIndex",
+        "detail": "calls into content.buildRegistry",
+        "fact_id": "3edf36708fecdc847f52882ed7f95c13"
+      },
+      {
+        "symbol": "app/guides.GuidesIndex",
+        "detail": "calls into content.buildRegistry",
+        "fact_id": "207d9a66b78e4828b85ea21a151c5e29"
+      },
+      {
+        "symbol": "content.livePages",
+        "detail": "calls into content.buildRegistry",
+        "fact_id": "11b6c1dbfc7908524d30a9e3274de3b2"
+      },
+      {
+        "symbol": "scripts.main",
+        "detail": "calls into content.buildRegistry"
+      },
+      {
+        "symbol": "content",
+        "detail": "called by content.buildRegistry",
+        "fact_id": "2ea2b54f7a929f7b2c94469c729fa971"
+      },
+      {
+        "symbol": "content.verifyFacts",
+        "detail": "called by content.buildRegistry",
+        "fact_id": "fa714f08308112970fb924f64a10e366"
+      },
+      {
+        "symbol": "lib.dataPageUpdated",
+        "detail": "called by content.buildRegistry",
+        "fact_id": "c04a5dd7b9990872ed56cd3ba37bce91"
+      },
+      {
+        "symbol": "lib.findPlaceholders",
+        "detail": "called by content.buildRegistry",
+        "fact_id": "5be4c658abcaa693ea9a567e8081e616"
+      },
+      {
+        "symbol": "lib.guideBlockers",
+        "detail": "called by content.buildRegistry",
+        "fact_id": "49982ceb7744fe66f35a5a0d6847e4b5"
+      }
+    ],
+    "suggested_actions": [
+      "Add focused tests around this chokepoint before refactoring",
+      "Consider decomposing it so call paths don't all funnel through one symbol",
+      "Verify it isn't doing orchestration that belongs in callers"
+    ]
+  },
+  {
+    "title": "Call-graph hotspot: lib.isDataPageLive (fan-in 3, fan-out 4)",
+    "source": "hotspots",
+    "description": "\"lib.isDataPageLive\" is a pinch point: 3 symbols call into it and it calls out to 4 others, so a large share of call chains pass through it (degree-centrality proxy for betweenness). Such chokepoints are high-risk to change and high-value to test.",
+    "confidence": 0.7,
+    "evidence": [
+      {
+        "file": "lib/stats.ts",
+        "symbol": "lib.isDataPageLive",
+        "detail": "fan-in 3 × fan-out 4 = score 12",
+        "line": 61,
+        "fact_id": "2e53cf17d4332766a0ade7b791fbc88c"
+      },
+      {
+        "symbol": "app/data/[slug].DataPage",
+        "detail": "calls into lib.isDataPageLive",
+        "fact_id": "abf18b3ffe20a5dc88bd3d61895e191d"
+      },
+      {
+        "symbol": "app/data/[slug].generateMetadata",
+        "detail": "calls into lib.isDataPageLive",
+        "fact_id": "99bc6273260be6d32943c33efc17e073"
+      },
+      {
+        "symbol": "content.buildRegistry",
+        "detail": "calls into lib.isDataPageLive",
+        "fact_id": "1164ccf1902a602de28530d05aabc7e0"
+      },
+      {
+        "symbol": "lib",
+        "detail": "called by lib.isDataPageLive",
+        "fact_id": "ca4db190f6f02c460ccb44547695a86e"
+      },
+      {
+        "symbol": "lib.loadFisp",
+        "detail": "called by lib.isDataPageLive",
+        "fact_id": "1503ce5501fb27b68ace285e3603ae74"
+      },
+      {
+        "symbol": "lib.loadGarages",
+        "detail": "called by lib.isDataPageLive",
+        "fact_id": "48b24982dd2bd25261baf8476afea14b"
+      },
+      {
+        "symbol": "lib.loadSheds",
+        "detail": "called by lib.isDataPageLive",
+        "fact_id": "912be5ef6942d0c474b105a394f3e326"
+      }
+    ],
+    "suggested_actions": [
+      "Add focused tests around this chokepoint before refactoring",
+      "Consider decomposing it so call paths don't all funnel through one symbol",
+      "Verify it isn't doing orchestration that belongs in callers"
+    ]
+  },
+  {
+    "title": "Deep dependency chain: scripts (depth 5)",
+    "source": "dependency-depth",
+    "description": "Module \"scripts\" has a longest dependency chain of 5 modules: scripts -\u003e app/how-it-works -\u003e components -\u003e content -\u003e lib. Deep chains slow comprehension and widen rebuild/retest impact when a module near the bottom changes.",
+    "confidence": 0.7,
+    "evidence": [
+      {
+        "fact": "scripts",
+        "fact_id": "8574e72d5c4c97581844f375714fe452"
+      },
+      {
+        "fact": "app/how-it-works",
+        "fact_id": "7fd3304d52a0e9759621745868ab55e6"
+      },
+      {
+        "fact": "components",
+        "fact_id": "2bc5978bc72343fc220e7cea7df3c1f8"
+      },
+      {
+        "fact": "content",
+        "fact_id": "2ea2b54f7a929f7b2c94469c729fa971"
+      },
+      {
+        "fact": "lib",
+        "fact_id": "ca4db190f6f02c460ccb44547695a86e"
+      }
+    ],
+    "suggested_actions": [
+      "Flatten the chain by depending on shared abstractions instead of deep transitive modules",
+      "Check whether intermediate modules are pass-through layers that can be removed",
+      "Introduce interfaces to decouple the deepest modules from their consumers"
+    ]
+  },
+  {
+    "title": "High cyclomatic complexity: lib.statsCsv (50)",
+    "source": "complexity-outliers",
+    "description": "\"lib.statsCsv\" has a cyclomatic complexity of 50 — well above the repo average. Highly branched functions are hard to test fully and are frequent defect sites.",
+    "confidence": 0.7,
+    "evidence": [
+      {
+        "file": "lib/stats.ts",
+        "symbol": "lib.statsCsv",
+        "detail": "cyclomatic complexity 50 at line 94",
+        "line": 94,
+        "fact_id": "b921d7611d4ffe8b7c6fe3245bc6f1be"
+      }
+    ],
+    "suggested_actions": [
+      "Extract guard clauses and nested branches into helper functions",
+      "Replace deep conditionals with table/strategy dispatch where possible",
+      "Add tests covering the distinct branches before refactoring"
+    ]
+  },
+  {
+    "title": "High cyclomatic complexity: scripts.main (40)",
+    "source": "complexity-outliers",
+    "description": "\"scripts.main\" has a cyclomatic complexity of 40 — well above the repo average. Highly branched functions are hard to test fully and are frequent defect sites.",
+    "confidence": 0.7,
+    "evidence": [
+      {
+        "file": "scripts/check-copy.ts",
+        "symbol": "scripts.main",
+        "detail": "cyclomatic complexity 40 at line 53",
+        "line": 53,
+        "fact_id": "c975784160eec6467436091736aeaf8a"
+      }
+    ],
+    "suggested_actions": [
+      "Extract guard clauses and nested branches into helper functions",
+      "Replace deep conditionals with table/strategy dispatch where possible",
+      "Add tests covering the distinct branches before refactoring"
+    ]
+  },
+  {
+    "title": "High cyclomatic complexity: components.LeadForm (28)",
+    "source": "complexity-outliers",
+    "description": "\"components.LeadForm\" has a cyclomatic complexity of 28 — well above the repo average. Highly branched functions are hard to test fully and are frequent defect sites.",
+    "confidence": 0.7,
+    "evidence": [
+      {
+        "file": "components/LeadForm.tsx",
+        "symbol": "components.LeadForm",
+        "detail": "cyclomatic complexity 28 at line 42",
+        "line": 42,
+        "fact_id": "fd6760394c5464605bbabaa5a8e9761c"
+      }
+    ],
+    "suggested_actions": [
+      "Extract guard clauses and nested branches into helper functions",
+      "Replace deep conditionals with table/strategy dispatch where possible",
+      "Add tests covering the distinct branches before refactoring"
+    ]
+  },
+  {
+    "title": "High cyclomatic complexity: app/data/[slug].DataPage (20)",
+    "source": "complexity-outliers",
+    "description": "\"app/data/[slug].DataPage\" has a cyclomatic complexity of 20 — well above the repo average. Highly branched functions are hard to test fully and are frequent defect sites.",
+    "confidence": 0.7,
+    "evidence": [
+      {
+        "file": "app/data/[slug]/page.tsx",
+        "symbol": "app/data/[slug].DataPage",
+        "detail": "cyclomatic complexity 20 at line 61",
+        "line": 61,
+        "fact_id": "abf18b3ffe20a5dc88bd3d61895e191d"
+      }
+    ],
+    "suggested_actions": [
+      "Extract guard clauses and nested branches into helper functions",
+      "Replace deep conditionals with table/strategy dispatch where possible",
+      "Add tests covering the distinct branches before refactoring"
+    ]
+  },
+  {
+    "title": "High cyclomatic complexity: app/api/lead.POST (18)",
+    "source": "complexity-outliers",
+    "description": "\"app/api/lead.POST\" has a cyclomatic complexity of 18 — well above the repo average. Highly branched functions are hard to test fully and are frequent defect sites.",
+    "confidence": 0.7,
+    "evidence": [
+      {
+        "file": "app/api/lead/route.ts",
+        "symbol": "app/api/lead.POST",
+        "detail": "cyclomatic complexity 18 at line 59",
+        "line": 59,
+        "fact_id": "80f38291feb6bb2cc263ca9db784a081"
+      }
+    ],
+    "suggested_actions": [
+      "Extract guard clauses and nested branches into helper functions",
+      "Replace deep conditionals with table/strategy dispatch where possible",
+      "Add tests covering the distinct branches before refactoring"
+    ]
+  },
+  {
+    "title": "High cyclomatic complexity: scripts.main (18)",
+    "source": "complexity-outliers",
+    "description": "\"scripts.main\" has a cyclomatic complexity of 18 — well above the repo average. Highly branched functions are hard to test fully and are frequent defect sites.",
+    "confidence": 0.7,
+    "evidence": [
+      {
+        "file": "scripts/check-links.ts",
+        "symbol": "scripts.main",
+        "detail": "cyclomatic complexity 18 at line 29",
+        "line": 29,
+        "fact_id": "e993b874962cacabb7a52eaa0312d93d"
+      }
+    ],
+    "suggested_actions": [
+      "Extract guard clauses and nested branches into helper functions",
+      "Replace deep conditionals with table/strategy dispatch where possible",
+      "Add tests covering the distinct branches before refactoring"
+    ]
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "snapshot_id": "sha256:39bebad4790f98000bfd94bc4aaa9ab9b2b65ba8adfd15d5f244c067cde79175",
+  "format_version": 1,
+  "enola_version": "0.4.12",
+  "extractor_version": "v259",
+  "generated_at": "2026-11-07T19:37:53Z",
+  "duration": "5.470596291s",
+  "repo_path": "/Users/andrewnorman/dev/buildingsauce-site",
+  "git": {
+    "ref": "main",
+    "commit": "35dae715ee0ad44df4d21e1f7e8c3da456122178",
+    "dirty": false,
+    "remote": "github.com/nipstar/building-sauce"
+  },
+  "extractors": [
+    "manifests",
+    "mdintent",
+    "typescript"
+  ],
+  "explainers": [
+    "cycles",
+    "layers",
+    "crossrepo",
+    "coverage",
+    "unused-routes",
+    "domain",
+    "query-loops",
+    "dead-methods",
+    "entry-points",
+    "messaging-coverage",
+    "god-class",
+    "hotspots",
+    "dependency-depth",
+    "exported-surface",
+    "complexity-outliers",
+    "intent",
+    "constraints",
+    "vendored-candidates"
+  ],
+  "renderers": [
+    "llm_context"
+  ],
+  "config_hash": "sha256:12cbb6c9d3b099d95fbadb1d4bbe736a4eeace82c3bfc868b4395916ef097edd",
+  "ignore_glob_hash": "sha256:7523cc6397a498e151125a682d28fbf6df20c6f51f6dfaf18fd8f5239a20d2d8",
+  "output_hashes": {
+    "facts.jsonl": "sha256:0647921632a62ffa5522216cc6cfac7e4f4db0bd986cb9ec53f9f5be239ac365",
+    "insights.json": "sha256:40e9059fd8ec14b9f093ca14f46acc2062928d3c05b3c19ded27f6828ea27770",
+    "llm_context.md": "sha256:4dc74e78b6b2af446f701221dbbd84ab7953d2b44e8b515f158382229b21a76f"
+  },
+  "fact_count": 786,
+  "insight_count": 13,
+  "quality": {
+    "files_seen": 209,
+    "files_parsed": 80,
+    "files_skipped": 2,
+    "dirs_skipped": 3,
+    "skipped_sample": [
+      ".git/ (glob: **/.git/**)",
+      ".next/ (glob: .next/**)",
+      "node_modules/ (glob: **/node_modules/**)",
+      "tests/form.spec.ts (glob: **/*.spec.ts)",
+      "tests/screenshots.spec.ts (glob: **/*.spec.ts)"
+    ],
+    "parse_errors": 0,
+    "heuristic_insights": 12,
+    "coverage": {
+      "services_total": 0,
+      "coverage_gaps": 0,
+      "unresolved_edges": 0,
+      "extractors_reporting": 1,
+      "extraction_unresolved": 126
+    },
+    "census": {
+      "files_walked": 211,
+      "parsed": 80,
+      "excluded_by_ignore": 2,
+      "excluded_by_kind": 128,
+      "excluded_kinds": {
+        "(no extension)": 1,
+        ".css": 1,
+        ".csv": 1,
+        ".dockerignore": 1,
+        ".env": 1,
+        ".example": 1,
+        ".gitignore": 1,
+        ".json": 5,
+        ".mdx": 11,
+        ".png": 100,
+        ".svg": 5
+      },
+      "skipped_with_cause": 1,
+      "top_skip_causes": [
+        {
+          "cause": "claimed by manifests, no facts emitted",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

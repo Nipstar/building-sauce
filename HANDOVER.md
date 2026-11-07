@@ -74,6 +74,18 @@ Seed values are Andy's counts from Nov 5, 2026. The sheds file is all null until
 
 n8n side (not in this repo): verify the signature, run the Easy Answer stop-list gate, upsert the GoHighLevel contact with tag `bs-sample` or `bs-waitlist-<trade>`, notify Andy. Test locally with `npm run mock:webhook` and `N8N_LEAD_WEBHOOK_URL=http://localhost:4001/webhook N8N_LEAD_WEBHOOK_SECRET=test npm start`.
 
+## IndexNow (Bing, DuckDuckGo, ChatGPT search)
+
+`scripts/indexnow.ts` POSTs live page URLs to api.indexnow.org. Google ignores IndexNow; the sitemap and Search Console still cover Google. Any random 32-char hex string works as the key; the same value goes in the host's env and in `.env`.
+
+```bash
+npm run indexnow                          # every live page in the registry
+npm run indexnow -- /guides/new-guide     # one or more paths
+npm run indexnow -- --dry-run             # print the list, post nothing
+```
+
+Run it after each deploy that adds or changes pages (new guide, weekly stats commit). It needs `INDEXNOW_KEY` and `NEXT_PUBLIC_SITE_URL` set to the public https URL, and the deployed site must serve the key at `/indexnow.txt`. Re-submitting unchanged URLs is harmless.
+
 ## Env vars
 
 | Var | Where | Purpose |
@@ -84,6 +96,7 @@ n8n side (not in this repo): verify the signature, run the Easy Answer stop-list
 | `NEXT_PUBLIC_TURNSTILE_SITE_KEY` | build | Renders the Turnstile widget when set |
 | `TURNSTILE_SECRET_KEY` | runtime | Verifies the widget token; unset skips verification |
 | `CHECKOUT_URL_FACADE` | build | GoHighLevel product or payment link for the "Start the facade feed" button; unset falls back to the free sample |
+| `INDEXNOW_KEY` | build | Served at `/indexnow.txt`; unset returns 404 and IndexNow stays off |
 | `CF_ANALYTICS_TOKEN` | build | Cloudflare Web Analytics beacon (cookieless) |
 | `GSC_VERIFICATION`, `BING_VERIFICATION` | build | Search Console and Bing Webmaster meta tags |
 
