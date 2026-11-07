@@ -1,0 +1,25 @@
+{
+  "as_of": "2026-11-05",
+  "source_note": "NYC Open Data, DOB NOW: Safety parking structure filings",
+  "active_status": { "unsafe": null, "srem": null, "total": 1550 },
+  "by_borough": [
+    { "borough": "Manhattan", "unsafe": null, "srem": null },
+    { "borough": "Brooklyn", "unsafe": null, "srem": null },
+    { "borough": "Queens", "unsafe": null, "srem": null },
+    { "borough": "Bronx", "unsafe": null, "srem": null },
+    { "borough": "Staten Island", "unsafe": null, "srem": null }
+  ],
+  "monthly": [
+    { "month": "2025-12", "unsafe": null, "srem": null },
+    { "month": "2026-01", "unsafe": null, "srem": null },
+    { "month": "2026-02", "unsafe": null, "srem": null },
+    { "month": "2026-03", "unsafe": null, "srem": null },
+    { "month": "2026-04", "unsafe": null, "srem": null },
+    { "month": "2026-05", "unsafe": null, "srem": null },
+    { "month": "2026-06", "unsafe": null, "srem": null },
+    { "month": "2026-07", "unsafe": null, "srem": null },
+    { "month": "2026-08", "unsafe": null, "srem": null },
+    { "month": "2026-09", "unsafe": null, "srem": null },
+    { "month": "2026-10", "unsafe": null, "srem": null }
+  ]
+}

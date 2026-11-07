@@ -1,0 +1,24 @@
+{
+  "as_of": null,
+  "total_active": null,
+  "age_bands": [
+    { "band": "under 90 days", "count": null },
+    { "band": "90 days to 1 year", "count": null },
+    { "band": "1 to 2 years", "count": null },
+    { "band": "2 to 5 years", "count": null },
+    { "band": "over 5 years", "count": null }
+  ],
+  "by_borough": [
+    { "borough": "Manhattan", "count": null },
+    { "borough": "Brooklyn", "count": null },
+    { "borough": "Queens", "count": null },
+    { "borough": "Bronx", "count": null },
+    { "borough": "Staten Island", "count": null }
+  ],
+  "monthly": [],
+  "external_benchmark": {
+    "text": "7,859 sidewalk sheds citywide, 372 up more than five years",
+    "source": "Habitat, citing city data",
+    "date": "2026-03-09"
+  }
+}

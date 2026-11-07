@@ -1,26 +1,198 @@
 @import "tailwindcss";
 
+/* Design tokens. Source: Building Sauce Design canvas (Home, Facade artboards) and logo sheet. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink: #141413;
+  --accent: #b4431f;
+  --accent-hover: #8f3f2a;
+  --paper: #f7f6f3;
+  --paper-2: #f4f2ee;
+  --hairline: #eceae6;
+  --hairline-dark: #3a3833;
+  --dashed: #cfcbc4;
+  --text-2: #4a4845;
+  --muted: #6b6966;
+  --dark-text: #cdc5b5;
+  --white: #ffffff;
+  --max-w: 1120px;
+  --text-w: 720px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: var(--ink);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-hairline: var(--hairline);
+  --color-hairline-dark: var(--hairline-dark);
+  --color-dashed: var(--dashed);
+  --color-text-2: var(--text-2);
+  --color-muted: var(--muted);
+  --color-dark-text: var(--dark-text);
+  --font-sans: var(--font-inter), Inter, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", ui-monospace, monospace;
+  --radius: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: light;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--white);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  border-radius: 0;
+}
+
+a {
+  color: var(--accent);
+}
+a:hover {
+  color: var(--accent-hover);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Type scale from the mockup */
+.h1 {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 1.06;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+.h2 {
+  font-size: clamp(1.75rem, 3.2vw, 2.25rem);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.h3 {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.mono {
+  font-family: var(--font-mono);
+}
+.lede {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+/* Long-form prose (guides, legal, compare) */
+.prose {
+  max-width: var(--text-w);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.prose > * + * {
+  margin-top: 1.1em;
+}
+.prose h2 {
+  font-size: 1.625rem;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin-top: 2.2em;
+  padding-top: 1.2em;
+  border-top: 1px solid var(--hairline);
+}
+.prose h3 {
+  font-size: 1.1875rem;
+  font-weight: 600;
+  margin-top: 1.8em;
+}
+.prose p,
+.prose li {
+  color: var(--text-2);
+}
+.prose strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+.prose ul,
+.prose ol {
+  padding-left: 1.25rem;
+}
+.prose ul {
+  list-style: disc;
+}
+.prose ol {
+  list-style: decimal;
+}
+.prose li + li {
+  margin-top: 0.4em;
+}
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+.prose th,
+.prose td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.6rem 0.75rem 0.6rem 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.prose th {
+  font-weight: 600;
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+.prose .fact-value {
+  font-family: var(--font-mono);
+  color: var(--ink);
+}
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* FAQ with native details */
+details.faq summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  font-weight: 600;
+  min-height: 44px;
+  align-items: center;
+}
+details.faq summary::-webkit-details-marker {
+  display: none;
+}
+details.faq summary::after {
+  content: "+";
+  font-family: var(--font-mono);
+  color: var(--muted);
+  flex: none;
+}
+details.faq[open] summary::after {
+  content: "\2013";
 }

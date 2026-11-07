@@ -1,0 +1,37 @@
+{
+  "as_of": "2026-11-05",
+  "source_note": "NYC Open Data, DOB NOW: Safety facades filings",
+  "cycle10_initial": { "unsafe": 576, "swarmp": 715, "safe": 1499 },
+  "last_12_months": {
+    "from": "2025-11-01",
+    "to": "2026-10-31",
+    "unsafe_initial": 315,
+    "swarmp_initial": 408
+  },
+  "by_borough": [
+    { "borough": "Manhattan", "unsafe": null, "swarmp": null },
+    { "borough": "Brooklyn", "unsafe": null, "swarmp": null },
+    { "borough": "Queens", "unsafe": null, "swarmp": null },
+    { "borough": "Bronx", "unsafe": null, "swarmp": null },
+    { "borough": "Staten Island", "unsafe": null, "swarmp": null }
+  ],
+  "by_subcycle": [
+    { "subcycle": "10A", "unsafe": null, "swarmp": null },
+    { "subcycle": "10B", "unsafe": null, "swarmp": null },
+    { "subcycle": "10C", "unsafe": null, "swarmp": null }
+  ],
+  "monthly": [
+    { "month": "2025-11", "unsafe_initial": null, "swarmp_initial": null },
+    { "month": "2025-12", "unsafe_initial": null, "swarmp_initial": null },
+    { "month": "2026-01", "unsafe_initial": null, "swarmp_initial": null },
+    { "month": "2026-02", "unsafe_initial": null, "swarmp_initial": null },
+    { "month": "2026-03", "unsafe_initial": null, "swarmp_initial": null },
+    { "month": "2026-04", "unsafe_initial": null, "swarmp_initial": null },
+    { "month": "2026-05", "unsafe_initial": null, "swarmp_initial": null },
+    { "month": "2026-06", "unsafe_initial": null, "swarmp_initial": null },
+    { "month": "2026-07", "unsafe_initial": null, "swarmp_initial": null },
+    { "month": "2026-08", "unsafe_initial": null, "swarmp_initial": null },
+    { "month": "2026-09", "unsafe_initial": null, "swarmp_initial": null },
+    { "month": "2026-10", "unsafe_initial": null, "swarmp_initial": null }
+  ]
+}

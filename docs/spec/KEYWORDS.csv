@@ -1,0 +1,70 @@
+keyword,us_volume,kd,cpc_usd,source,target_url,intent,phase,priority,notes
+local law 11,1400,6,1.50,Ahrefs,/guides/local-law-11,informational,2,high,Pillar. Owners and managers search it; they are the deciders
+local law 11 nyc,350,5,0.70,Ahrefs,/guides/local-law-11,informational,2,high,
+nyc local law 11,300,8,,Ahrefs,/guides/local-law-11,informational,2,high,
+new york local law 11,150,1,,Ahrefs,/guides/local-law-11,informational,2,medium,
+new york city local law 11,150,4,,Ahrefs,/guides/local-law-11,informational,2,medium,
+what is local law 11,100,1,,Ahrefs,/guides/local-law-11,informational,2,medium,Answer block
+local law 11 inspection,100,1,,Ahrefs,/guides/local-law-11,informational,2,medium,
+local law 11 facade,100,0,,Ahrefs,/guides/local-law-11,informational,2,medium,
+local law 11 new york,100,0,,Ahrefs,/guides/local-law-11,informational,2,medium,
+local law 11 cycle,100,4,,Ahrefs,/guides/fisp-cycle-10-deadlines,informational,2,high,
+fisp cycle 10,200,,6.00,Ahrefs (Treg/SE Ranking: no data),/guides/fisp-cycle-10-deadlines,informational,2,high,CPC $6 signals commercial interest
+local law 11 cycle 10,30,,,Ahrefs,/guides/fisp-cycle-10-deadlines,informational,2,medium,
+fisp nyc,100,13,1.80,Ahrefs,/guides/local-law-11,informational,2,medium,
+fisp,80,1,0.35,Ahrefs,/guides/local-law-11,informational,2,medium,
+facade inspection safety program,100,14,,Ahrefs,/guides/local-law-11,informational,2,medium,
+facade inspection nyc,100,14,1.50,Ahrefs,/guides/local-law-11,informational,2,low,
+nyc facade inspection,150,0,,Ahrefs,/guides/local-law-11,informational,2,medium,
+facade inspection,250,0,,Ahrefs,/guides/local-law-11,informational,2,low,National mix
+swarmp,150-210,6,1.85,Ahrefs 150 / Treg SE Ranking 210,/guides/swarmp-vs-unsafe,informational,2,high,Treg cross-check 7 Nov
+swarmp local law 11,150,4,,Ahrefs,/guides/swarmp-vs-unsafe,informational,2,high,
+local law 11 contractors,150,0,3.00,Ahrefs,/contractors/local-law-11 (idea),commercial,3,medium,Owners looking for contractors. Possible ranked contractor directory page from DOB permit data
+facade restoration nyc,150,1,3.00,Ahrefs,/contractors/local-law-11 (idea),commercial,3,low,Owner intent
+facade repair nyc,100,,,Ahrefs,/contractors/local-law-11 (idea),commercial,3,low,Owner intent
+local law 11 leads,0,,,Treg SE Ranking: no data,/facade-restoration-leads,transactional,1,high,Zero measured volume. Page exists for cold email and AI answers
+facade restoration leads,0,,,Treg SE Ranking: no data,/facade-restoration-leads,transactional,1,high,As above
+sidewalk shed,700,0,1.40,Ahrefs,/data/nyc-sidewalk-sheds,informational,2,high,
+sidewalk shed nyc,150,0,1.70,Ahrefs,/data/nyc-sidewalk-sheds,informational,2,high,
+what is a sidewalk shed,90,2,,Ahrefs,/data/nyc-sidewalk-sheds,informational,2,medium,Answer block
+scaffolding nyc,300,24,1.60,Ahrefs,none,commercial,,skip,Service buyers; KD too high for value
+local law 152,800,4,2.00,Ahrefs,/guides/local-law-152,informational,2,high,TP 1300. Biggest easy cluster
+local law 152 nyc,250,0,,Ahrefs,/guides/local-law-152,informational,2,high,
+local law 152 update,150,0,,Ahrefs,/guides/local-law-152,informational,2,high,
+local law 152 of 2016,150,3,,Ahrefs,/guides/local-law-152,informational,2,medium,
+local law 152 gas inspection,150,0,,Ahrefs,/guides/local-law-152,informational,2,high,
+local law 152 due dates,150,0,,Ahrefs,/guides/local-law-152,informational,2,high,
+nyc local law 152,150,3,,Ahrefs,/guides/local-law-152,informational,2,medium,
+local law 152 inspection,150,0,,Ahrefs,/guides/local-law-152,informational,2,high,
+local law 152 extension,100,1,,Ahrefs,/guides/local-law-152,informational,2,medium,
+local law 152 inspection cost,100,1,,Ahrefs,/guides/local-law-152,informational,2,medium,No prices quoted; cost factors only
+local 152 law,100,3,,Ahrefs,/guides/local-law-152,informational,2,low,
+local law 152 inspections,90,3,,Ahrefs,/guides/local-law-152,informational,2,low,
+nyc local law 152 gas line inspection,90,1,,Ahrefs,/guides/local-law-152,informational,2,low,
+gas piping inspection nyc,200,0,4.00,Ahrefs,/gas-piping-leads,commercial,2,high,TP 2200 (parent ll152)
+local law 126,200,11,1.30,Ahrefs,/guides/local-law-126,informational,3,medium,
+local law 126 nyc,90,11,,Ahrefs,/guides/local-law-126,informational,3,low,
+local law 126 parking garage,0,,,Ahrefs and Treg: no data,/parking-garage-leads,transactional,2,medium,
+boiler inspection nyc,200,2,4.00,Ahrefs,/guides/nyc-boiler-inspection,informational,3,medium,
+dob violations,500,6,2.00,Ahrefs,none yet,informational,,later,Possible future guide; parent nyc building violations
+dob now,3800,36,2.00,Ahrefs,none,navigational,,skip,Navigational to DOB
+construction leads nyc,10,1,8.00,Ahrefs,/,transactional,1,high,TP 1000; parent construction leads
+construction leads,700,4,11.00,Ahrefs,/construction-leads,commercial,2,high,National. KD low despite agency competition
+leads for construction,1300,7,,Ahrefs,/construction-leads,commercial,2,high,
+contractor leads,700,6,11.00,Ahrefs,/construction-leads,commercial,2,high,
+leads for contractors,450,0,11.00,Ahrefs,/construction-leads,commercial,2,high,TP 3300
+construction lead generation,400,5,0.40,Ahrefs,/construction-leads,informational,2,medium,TP 2200
+commercial construction leads,200,0,6.00,Ahrefs,/construction-leads,commercial,2,high,
+how to find construction leads,150,11,,Ahrefs,/construction-leads,informational,2,medium,
+how to get construction leads,150,7,,Ahrefs,/construction-leads,informational,2,medium,
+best way to get construction leads,100,8,,Ahrefs,/construction-leads,informational,2,medium,
+best construction leads,90,8,,Ahrefs,/compare,commercial,3,medium,
+construction leads services,90,13,,Ahrefs,/compare,commercial,3,medium,
+free construction leads,150,3,,Ahrefs,/construction-leads,informational,2,low,Free DIY method section
+building permit leads,30,,1.90,Ahrefs,/construction-leads,commercial,2,low,
+commercial roofing leads,300,1,12.00,Ahrefs,/commercial-roofing-leads,commercial,3,high,High CPC; national term
+roofing leads,1000,2,14.00,Ahrefs,none,commercial,,skip,Residential and pay-per-lead intent
+mold remediation leads,70,0,9.00,Ahrefs,/mold-remediation-leads,commercial,3,medium,
+florida milestone inspection,200,9,2.00,Ahrefs,/guides/florida-milestone-inspection,informational,3,medium,
+structural integrity reserve study,150,0,3.00,Ahrefs,/guides/florida-sirs-deadline,informational,3,medium,TP 900
+sirs florida,150,5,1.90,Ahrefs,/guides/florida-sirs-deadline,informational,3,medium,
