@@ -22,7 +22,7 @@ const Lead = z.object({
   firm: z.string().trim().min(1).max(160),
   email: z.string().trim().email().max(200),
   phone: z.string().trim().max(40).optional().default(""),
-  website: z.string().trim().max(200).optional().default(""),
+  website: z.string().trim().min(3).max(200),
   borough: z.string().trim().max(60).optional().default(""),
   role: z.string().trim().max(80).optional().default(""),
   message: z.string().trim().max(2000).optional().default(""),

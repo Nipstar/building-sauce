@@ -36,13 +36,13 @@ async function fill(page: import("@playwright/test").Page) {
   await page.fill("#lf-email", "estimator@example.com");
   await page.selectOption("#lf-borough", "Brooklyn");
   await page.selectOption("#lf-role", "Facade restoration");
+  await page.fill("#lf-website", "testfacade.com");
 }
 
 test("sample form posts a signed payload and lands on /thanks", async ({ page }) => {
   await page.goto("/free-sample?utm_source=cold&utm_medium=email&utm_campaign=batch1&utm_content=a");
   await fill(page);
   await page.fill("#lf-phone", "212 555 0100");
-  await page.fill("#lf-website", "testfacade.com");
   await page.click("button[type=submit]");
   await page.waitForURL(/\/thanks\?type=sample/);
   expect(received).toHaveLength(1);

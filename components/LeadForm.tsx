@@ -201,9 +201,9 @@ export function LeadForm(props: LeadFormProps) {
       </div>
       <div className="flex flex-col gap-1.5">
         <label htmlFor="lf-website" className={labelCls}>
-          Website (optional)
+          Website
         </label>
-        <input id="lf-website" name="website" type="text" inputMode="url" autoComplete="url" placeholder="yourfirm.com" className={inputCls} />
+        <input id="lf-website" name="website" type="text" required inputMode="url" autoComplete="url" placeholder="yourfirm.com" className={inputCls} />
       </div>
       {showMessage && (
         <div className="flex flex-col gap-1.5">
