@@ -94,7 +94,8 @@ export function LeadForm(props: LeadFormProps) {
       borough: String(fd.get("borough") ?? ""),
       role: String(fd.get("role") ?? ""),
       message: String(fd.get("message") ?? ""),
-      website: String(fd.get("website") ?? ""), // honeypot
+      website: String(fd.get("website") ?? ""),
+      hp: String(fd.get("hp") ?? ""), // honeypot
       turnstileToken: String(fd.get("cf-turnstile-response") ?? ""),
       page,
       utm: readUtm(),
@@ -198,6 +199,12 @@ export function LeadForm(props: LeadFormProps) {
           ))}
         </select>
       </div>
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="lf-website" className={labelCls}>
+          Website (optional)
+        </label>
+        <input id="lf-website" name="website" type="text" inputMode="url" autoComplete="url" placeholder="yourfirm.com" className={inputCls} />
+      </div>
       {showMessage && (
         <div className="flex flex-col gap-1.5">
           <label htmlFor="lf-message" className={labelCls}>
@@ -208,8 +215,8 @@ export function LeadForm(props: LeadFormProps) {
       )}
       {/* Honeypot: hidden from people, filled by bots. */}
       <div className="absolute -left-[9999px] h-px w-px overflow-hidden" aria-hidden="true">
-        <label htmlFor="lf-website">Website</label>
-        <input id="lf-website" name="website" tabIndex={-1} autoComplete="off" />
+        <label htmlFor="lf-hp">Leave this empty</label>
+        <input id="lf-hp" name="hp" tabIndex={-1} autoComplete="off" />
       </div>
       {SITE_KEY && <div className="cf-turnstile" data-sitekey={SITE_KEY} data-size="flexible" />}
       <button

@@ -32,7 +32,7 @@ export const SITE = {
       "Quiet month rule: if a month has no building worth a call, next month is free.",
     foundingOffer:
       "Founding offer: the first 5 firms pay $300 a month for as long as they stay. Firm 6 onward pays $400.",
-    stripeLinkFacade: process.env.STRIPE_LINK_FACADE ?? "",
+    checkoutUrlFacade: process.env.CHECKOUT_URL_FACADE ?? "",
   },
   delivery: "Every Monday, 7am Eastern. One email, a CSV and a web page.",
   buildDate: "2026-11-07",

@@ -29,7 +29,7 @@ const ROWS = [
 
 export default function PricingPage() {
   const p = SITE.price;
-  const stripe = p.stripeLinkFacade || "/free-sample";
+  const checkout = p.checkoutUrlFacade || "/free-sample";
   return (
     <PageShell>
       <JsonLd data={productSchema()} />
@@ -99,7 +99,7 @@ export default function PricingPage() {
         <div className="flex max-w-[var(--text-w)] flex-col gap-6">
           <h2 className="h3">Terms</h2>
           <ul className="flex flex-col gap-2 text-[15px] leading-relaxed text-text-2">
-            <li>Card payment through Stripe. Billed monthly in USD from the day you start.</li>
+            <li>Card payment. Billed monthly in USD from the day you start.</li>
             <li>Cancel by replying to any invoice. No notice period.</li>
             <li>
               Founding offer: the first {p.foundingSeats} firms pay {usd(p.founding)} a month for as long as they stay.
@@ -109,12 +109,12 @@ export default function PricingPage() {
             <li>Shared list, capped at {p.cap} firms per feed.</li>
           </ul>
           <div className="flex flex-wrap gap-3">
-            <ButtonLink href={stripe}>Start the facade feed</ButtonLink>
+            <ButtonLink href={checkout}>Start the facade feed</ButtonLink>
             <ButtonLink href="/free-sample" variant="ghost">
               Get a free sample first
             </ButtonLink>
           </div>
-          {!p.stripeLinkFacade && (
+          {!p.checkoutUrlFacade && (
             <p className="text-[13px] text-muted">Card checkout opens with the first paid list. Until then, start with the free sample.</p>
           )}
         </div>

@@ -43,8 +43,8 @@ export default function PrivacyPage() {
           <h2>3. Who processes it</h2>
           <p>
             Form data passes through Cloudflare (bot protection and network), our hosting provider, our own n8n
-            automation server, GoHighLevel (our contact database and email tool) and, if you subscribe, Stripe (card
-            payments). We do not sell personal data.
+            automation server and GoHighLevel (our contact database, email tool and, if you subscribe, card payment
+            processor). We do not sell personal data.
           </p>
 
           <h2>4. Public-record data in the feed</h2>

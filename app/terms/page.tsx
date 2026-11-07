@@ -67,7 +67,7 @@ export default function TermsPage() {
 
           <h2>6. Billing and cancellation</h2>
           <p>
-            Subscriptions are billed monthly in advance in US dollars by card through Stripe at {usd(p.monthly)} a
+            Subscriptions are billed monthly in advance in US dollars by card at {usd(p.monthly)} a
             month per feed, or {usd(p.founding)} a month for the first {p.foundingSeats} subscribing firms for as long
             as they remain continuously subscribed. You may cancel at any time by replying to any invoice email; the
             cancellation takes effect at the end of the paid month and no further charge is made. Fees already paid are

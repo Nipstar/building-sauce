@@ -1,11 +1,16 @@
 import { createHmac } from "node:crypto";
 import { NextResponse } from "next/server";
 import { z } from "zod";
+import { FEEDS } from "@/content/feeds";
 
 /**
  * Lead form handler. Validates, drops honeypot hits silently, verifies
  * Turnstile, signs the payload and forwards it to n8n. The site never sends
  * email itself.
+ *
+ * Payload keys match the Google Sheet headers exactly (building-sauce-enquiries):
+ * Submitted At, Name, Company, Email, Phone, Website, Feed, Areas Covered,
+ * Message, Source Page, Stop-list Check, Status, Notes. Extra context is under `meta`.
  */
 
 const FREE_MAIL = /@(gmail|yahoo|hotmail|aol|outlook|icloud|live|msn|ymail|protonmail)\./i;
@@ -17,10 +22,11 @@ const Lead = z.object({
   firm: z.string().trim().min(1).max(160),
   email: z.string().trim().email().max(200),
   phone: z.string().trim().max(40).optional().default(""),
+  website: z.string().trim().max(200).optional().default(""),
   borough: z.string().trim().max(60).optional().default(""),
   role: z.string().trim().max(80).optional().default(""),
   message: z.string().trim().max(2000).optional().default(""),
-  website: z.string().optional().default(""), // honeypot
+  hp: z.string().optional().default(""), // honeypot
   turnstileToken: z.string().optional().default(""),
   page: z.string().max(200).optional().default(""),
   utm: z
@@ -62,10 +68,11 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Please check the form and try again." }, { status: 422 });
   }
   const lead = parsed.data;
+  const thanks = new URL(`/thanks?type=${lead.formType}&trade=${lead.trade}`, request.url);
 
   // Honeypot: pretend it worked, post nothing.
-  if (lead.website) {
-    return NextResponse.redirect(new URL(`/thanks?type=${lead.formType}&trade=${lead.trade}`, request.url), 303);
+  if (lead.hp) {
+    return NextResponse.redirect(thanks, 303);
   }
 
   const ip = request.headers.get("cf-connecting-ip") ?? request.headers.get("x-forwarded-for");
@@ -73,27 +80,35 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Could not verify you are human. Reload and try again." }, { status: 403 });
   }
 
-  const webhook = process.env.N8N_LEAD_WEBHOOK_URL;
-  const secret = process.env.N8N_LEAD_WEBHOOK_SECRET ?? "";
+  const feedName = FEEDS.find((f) => f.trade === lead.trade)?.name ?? "Other";
   const payload = {
-    formType: lead.formType,
-    trade: lead.trade,
-    name: lead.name,
-    firm: lead.firm,
-    email: lead.email,
-    phone: lead.phone,
-    borough: lead.borough,
-    role: lead.role,
-    message: lead.message,
-    page: lead.page,
-    utm: lead.utm,
-    submittedAt: lead.submittedAt || new Date().toISOString(),
-    freeMail: FREE_MAIL.test(lead.email),
-    ip: ip ?? "",
-    userAgent: request.headers.get("user-agent") ?? "",
+    "Submitted At": lead.submittedAt || new Date().toISOString(),
+    Name: lead.name,
+    Company: lead.firm,
+    Email: lead.email,
+    Phone: lead.phone,
+    Website: lead.website,
+    Feed: feedName,
+    "Areas Covered": lead.borough,
+    Message: [lead.role ? `Role: ${lead.role}` : "", lead.message].filter(Boolean).join("\n"),
+    "Source Page": lead.page,
+    "Stop-list Check": "",
+    Status: lead.formType === "sample" ? "Sample requested" : lead.formType === "waitlist" ? "Waitlist" : "Contact",
+    Notes: "",
+    meta: {
+      formType: lead.formType,
+      trade: lead.trade,
+      role: lead.role,
+      freeMail: FREE_MAIL.test(lead.email),
+      utm: lead.utm,
+      ip: ip ?? "",
+      userAgent: request.headers.get("user-agent") ?? "",
+    },
   };
   const body = JSON.stringify(payload);
 
+  const webhook = process.env.N8N_LEAD_WEBHOOK_URL;
+  const secret = process.env.N8N_LEAD_WEBHOOK_SECRET ?? "";
   if (!webhook) {
     console.warn("[lead] N8N_LEAD_WEBHOOK_URL not set; lead not forwarded", { email: lead.email, formType: lead.formType });
   } else {
@@ -111,6 +126,7 @@ export async function POST(request: Request) {
       return null;
     });
     if (!res || !res.ok) {
+      console.error("[lead] webhook responded", res?.status);
       return NextResponse.json(
         { error: "Could not save your request. Email hello@buildingsauce.com and we will sort it." },
         { status: 502 },
@@ -118,5 +134,5 @@ export async function POST(request: Request) {
     }
   }
 
-  return NextResponse.redirect(new URL(`/thanks?type=${lead.formType}&trade=${lead.trade}`, request.url), 303);
+  return NextResponse.redirect(thanks, 303);
 }

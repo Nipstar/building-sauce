@@ -42,22 +42,25 @@ test("sample form posts a signed payload and lands on /thanks", async ({ page })
   await page.goto("/free-sample?utm_source=cold&utm_medium=email&utm_campaign=batch1&utm_content=a");
   await fill(page);
   await page.fill("#lf-phone", "212 555 0100");
+  await page.fill("#lf-website", "testfacade.com");
   await page.click("button[type=submit]");
   await page.waitForURL(/\/thanks\?type=sample/);
   expect(received).toHaveLength(1);
   const hit = received[0];
   expect(hit.body).toMatchObject({
-    formType: "sample",
-    trade: "facade",
-    name: "Test Estimator",
-    firm: "Test Facade Corp",
-    email: "estimator@example.com",
-    borough: "Brooklyn",
-    role: "Facade restoration",
-    page: "/free-sample",
-    freeMail: false,
-    utm: { source: "cold", medium: "email", campaign: "batch1", content: "a" },
+    Name: "Test Estimator",
+    Company: "Test Facade Corp",
+    Email: "estimator@example.com",
+    Phone: "212 555 0100",
+    Website: "testfacade.com",
+    Feed: "Facade",
+    "Areas Covered": "Brooklyn",
+    Message: "Role: Facade restoration",
+    "Source Page": "/free-sample",
+    Status: "Sample requested",
+    meta: { formType: "sample", trade: "facade", freeMail: false, utm: { source: "cold", medium: "email", campaign: "batch1", content: "a" } },
   });
+  expect(typeof hit.body["Submitted At"]).toBe("string");
   expect(hit.signature).toBe(`sha256=${createHmac("sha256", SECRET).update(hit.raw).digest("hex")}`);
 });
 
@@ -68,15 +71,15 @@ test("free-mail address is flagged", async ({ page }) => {
   await page.click("button[type=submit]");
   await page.waitForURL(/\/thanks/);
   expect(received).toHaveLength(1);
-  expect(received[0].body.freeMail).toBe(true);
-  expect(received[0].body.page).toBe("/facade-restoration-leads");
+  expect((received[0].body.meta as { freeMail: boolean }).freeMail).toBe(true);
+  expect(received[0].body["Source Page"]).toBe("/facade-restoration-leads");
 });
 
 test("honeypot submission posts nothing", async ({ page }) => {
   await page.goto("/free-sample");
   await fill(page);
   await page.evaluate(() => {
-    (document.querySelector("#lf-website") as HTMLInputElement).value = "http://spam.example";
+    (document.querySelector("#lf-hp") as HTMLInputElement).value = "http://spam.example";
   });
   await page.click("button[type=submit]");
   await page.waitForURL(/\/thanks/);

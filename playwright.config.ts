@@ -18,6 +18,7 @@ export default defineConfig({
     env: {
       N8N_LEAD_WEBHOOK_URL: "http://localhost:4001/webhook",
       N8N_LEAD_WEBHOOK_SECRET: "test",
+      TURNSTILE_SECRET_KEY: "", // skip verification in tests
       NEXT_PUBLIC_SITE_URL: `http://localhost:${PORT}`,
     },
   },
