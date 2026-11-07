@@ -44,7 +44,8 @@ async function main() {
   const results = await Promise.all(
     Array.from(urls.keys()).map(async (u) => [u, await status(u)] as const),
   );
-  const bad = results.filter(([, s]) => typeof s !== "number" || s < 200 || s >= 400);
+  // 429 means the host rate-limited the checker, not a dead link. Report it, do not fail.
+  const bad = results.filter(([, s]) => typeof s !== "number" || s < 200 || (s >= 400 && s !== 429));
   for (const [u, s] of results) console.log(`${String(s).padEnd(7)} ${u}`);
   if (bad.length) {
     console.error(`\ncheck:links FAILED (${bad.length} of ${results.length})`);

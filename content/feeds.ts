@@ -354,7 +354,7 @@ export const FEEDS: FeedPage[] = [
     cardLink: "Join the waitlist",
     title: "Local Law 152 Leads for NYC Master Plumbers | Building Sauce",
     description:
-      "NYC buildings due their Local Law 152 gas piping inspection in 2027, Community Districts 11, 12, 14, 15 and 17, with the registered agent. Join the waitlist.",
+      "NYC buildings due a Local Law 152 gas piping inspection in 2027, Community Districts 11, 12, 14, 15 and 17, with the registered agent. Waitlist.",
     primaryKeyword: "local law 152 leads",
     updated: UPDATED,
     eyebrow: "Local Law 152 leads for Licensed Master Plumbers",
@@ -473,9 +473,9 @@ export const FEEDS: FeedPage[] = [
     name: "Boilers",
     cardCopy: "Buildings whose annual boiler inspection reported defects. For boiler and heating contractors.",
     cardLink: "Join the waitlist",
-    title: "NYC Boiler Repair Leads From Inspection Filings | Building Sauce",
+    title: "NYC Boiler Repair Leads From DOB Filings | Building Sauce",
     description:
-      "NYC buildings whose annual boiler inspection just reported defects, with the managing agent to call. Defects must be corrected within 90 days. Join the waitlist.",
+      "NYC buildings whose annual boiler inspection just reported defects, with the managing agent to call. Defects must be fixed in 90 days. Waitlist.",
     primaryKeyword: "boiler repair leads nyc",
     updated: UPDATED,
     eyebrow: "Boiler repair leads for NYC heating contractors",
@@ -587,7 +587,7 @@ export const FEEDS: FeedPage[] = [
     cardLink: "Join the waitlist",
     title: "NYC Mold Remediation Leads, Local Law 61 | Building Sauce",
     description:
-      "NYC buildings with open mold violations that must, under Local Law 61, hire a licensed assessor and a separate licensed remediator. With the managing agent. Join the waitlist.",
+      "NYC buildings with open mold violations that must hire a licensed assessor and a separate licensed remediator under Local Law 61. Waitlist.",
     primaryKeyword: "mold remediation leads",
     updated: UPDATED,
     eyebrow: "Mold remediation leads for licensed NYC assessors and remediators",
@@ -697,9 +697,9 @@ export const FEEDS: FeedPage[] = [
     name: "Roofing",
     cardCopy: "Buildings with open water-leak violations and no roof or waterproofing permit on file.",
     cardLink: "Join the waitlist",
-    title: "Commercial Roofing Leads in NYC From Public Records | Building Sauce",
+    title: "Commercial Roofing Leads NYC | Building Sauce",
     description:
-      "NYC apartment and commercial buildings with open water-leak violations and no roofing or waterproofing permit on file, with the managing agent. Join the waitlist.",
+      "NYC buildings with open water-leak violations and no roofing or waterproofing permit on file, with the managing agent to call. Waitlist.",
     primaryKeyword: "commercial roofing leads",
     updated: UPDATED,
     eyebrow: "Commercial roofing leads for NYC roofing and waterproofing contractors",
@@ -803,9 +803,9 @@ export const FEEDS: FeedPage[] = [
     cardCopy:
       "Associations due a milestone inspection or past the reserve study deadline, with the management company on file.",
     cardLink: "Join the waitlist",
-    title: "Florida Condo Milestone Inspection and SIRS Leads | Building Sauce",
+    title: "Florida Condo Milestone and SIRS Leads | Building Sauce",
     description:
-      "Florida condo associations due a milestone inspection or past the structural integrity reserve study deadline, with the management company on file. Join the waitlist.",
+      "Florida condo associations due a milestone inspection or past the reserve study deadline, with the management company on file. Waitlist.",
     primaryKeyword: "florida milestone inspection",
     updated: UPDATED,
     eyebrow: "Milestone inspection and SIRS leads for Florida restoration contractors",

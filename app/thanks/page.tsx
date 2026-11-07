@@ -44,7 +44,7 @@ export default function ThanksPage({ searchParams }: PageProps<"/thanks">) {
   return (
     <PageShell>
       <Section pad="pt-14 pb-24">
-        <Suspense fallback={<h1 className="h1">Thanks.</h1>}>
+        <Suspense fallback={<p className="h1">Thanks.</p>}>
           <Body searchParams={searchParams} />
         </Suspense>
       </Section>

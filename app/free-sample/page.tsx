@@ -8,7 +8,7 @@ import { webPageSchema } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
 
 const META = {
-  title: "Free Sample: Last Week's NYC Facade Leads | Building Sauce",
+  title: "Free NYC Facade Lead Sample | Building Sauce",
   description:
     "Ten real NYC buildings from last week's facade feed, with filing dates, permit status and the managing agent. Free, once per firm, no card.",
   path: "/free-sample",

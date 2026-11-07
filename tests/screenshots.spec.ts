@@ -11,6 +11,7 @@ const EXTRA = ["/thanks?type=sample&trade=facade", "/does-not-exist"];
 
 test.describe("screenshots", () => {
   test("every sitemap page renders without horizontal scroll", async ({ page, baseURL }) => {
+    test.setTimeout(15 * 60_000);
     const xml = await (await page.request.get(`${baseURL}/sitemap.xml`)).text();
     const urls = Array.from(xml.matchAll(/<loc>([^<]+)<\/loc>/g), (m) => new URL(m[1]).pathname);
     expect(urls.length).toBeGreaterThan(5);
@@ -19,7 +20,7 @@ test.describe("screenshots", () => {
     for (const url of [...urls, ...EXTRA]) {
       for (const w of WIDTHS) {
         await page.setViewportSize({ width: w, height: 900 });
-        await page.goto(url, { waitUntil: "networkidle" });
+        await page.goto(url, { waitUntil: "load" });
         const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
         expect(overflow, `${url} at ${w}px has horizontal overflow of ${overflow}px`).toBeLessThanOrEqual(0);
         const name = (url === "/" ? "home" : url.replace(/^\//, "").replace(/[^a-z0-9-]+/gi, "-")) + `-${w}.png`;

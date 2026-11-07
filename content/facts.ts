@@ -163,7 +163,7 @@ const LIST: Fact[] = [
   f("fl_milestone", "30 years", "Florida condominium and cooperative buildings of three or more habitable stories need a milestone inspection by Dec 31 of the year the building turns 30, then every 10 years.", SRC.flMilestone),
   f("fl_milestone_first", "Dec 31, 2024", "Florida buildings that had already reached 30 years before July 1, 2022 had until Dec 31, 2024 to complete their first milestone inspection.", SRC.flMilestone),
   f("fl_sirs_scope", "Every 10 years", "A structural integrity reserve study is required for each Florida condominium or cooperative building of three or more habitable stories, at least every ten years, covering the roof, structure, fireproofing, plumbing, electrical, waterproofing and other listed items.", SRC.flSirs),
-  f("fl_sirs", "Dec 31, 2025", "Florida associations had to complete a structural integrity reserve study by Dec 31, 2025, or by Dec 31, 2026 where a milestone inspection was also due by then. No later date is allowed.", SRC.hb913),
+  f("fl_sirs", "Dec 31, 2025", "Florida associations had to complete a structural integrity reserve study by Dec 31, 2025, or by Dec 31, 2026 where a milestone inspection was also due by then. No later date is allowed (HB 913 of 2025).", SRC.flSirs),
 
   // Our own counts
   f("own_fisp_cycle10", "576 Unsafe", "Our count of DOB filings on NYC Open Data on Nov 5, 2026 showed 576 initial Unsafe, 715 initial SWARMP and 1,499 initial Safe reports filed so far in FISP Cycle 10.", SRC.openDataFacades, "high", "2026-11-05"),

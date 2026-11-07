@@ -50,7 +50,7 @@ export function PricingBand({
               </>
             )}
           </ul>
-          <p className="text-[13px] text-muted">
+          <p className="text-[13px] text-dark-text">
             {live
               ? `Start with last week's list, free. If it isn't worth ${usd(p.monthly)} to you after you've phoned three rows, don't subscribe.`
               : "No card, no commitment. We will not email you about anything else."}

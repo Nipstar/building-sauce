@@ -27,7 +27,7 @@ const STATIC: Omit<PageEntry, "live" | "blockers">[] = [
   },
   {
     url: "/free-sample",
-    title: "Free Sample: Last Week's NYC Facade Leads | Building Sauce",
+    title: "Free NYC Facade Lead Sample | Building Sauce",
     description:
       "Ten real NYC buildings from last week's facade feed, with filing dates, permit status and the managing agent. Free, once per firm, no card.",
     updated: SITE.buildDate,
@@ -77,7 +77,7 @@ const STATIC: Omit<PageEntry, "live" | "blockers">[] = [
   },
   {
     url: "/data",
-    title: "NYC Building Compliance Data, Updated Weekly | Building Sauce",
+    title: "NYC Building Compliance Data, Weekly | Building Sauce",
     description:
       "Weekly counts of NYC facade Unsafe filings, sidewalk sheds and parking garage conditions from DOB records. Aggregates only, with method and limits.",
     updated: SITE.buildDate,
@@ -89,7 +89,7 @@ const STATIC: Omit<PageEntry, "live" | "blockers">[] = [
     url: "/compare",
     title: "Construction Lead Services Compared | Building Sauce",
     description:
-      "Honest comparisons of Building Sauce with FieldClients, Shovels, ConstructConnect and Dodge: what each sells, price model, contract terms and who each suits.",
+      "Honest comparisons of Building Sauce with FieldClients, Shovels, ConstructConnect and Dodge: what each sells, price model, terms and who each suits.",
     updated: SITE.buildDate,
     phase: 3,
     kind: "page",

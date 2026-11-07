@@ -10,7 +10,7 @@ import { webPageSchema } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
 
 const META = {
-  title: "NYC Building Compliance Data, Updated Weekly | Building Sauce",
+  title: "NYC Building Compliance Data, Weekly | Building Sauce",
   description:
     "Weekly counts of NYC facade Unsafe filings, sidewalk sheds and parking garage conditions from DOB records. Aggregates only, with method and limits.",
   path: "/data",

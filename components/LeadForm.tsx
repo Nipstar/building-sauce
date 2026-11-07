@@ -125,7 +125,7 @@ export function LeadForm(props: LeadFormProps) {
   }
 
   const inputCls =
-    "h-11 w-full border border-dashed bg-white px-3 text-[15px] text-ink outline-none focus:border-ink";
+    "h-11 w-full border border-dashed bg-white px-3 text-[15px] text-ink focus:border-ink";
   const labelCls = "text-[13px] font-semibold text-ink";
 
   return (

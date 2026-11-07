@@ -1,0 +1,134 @@
+---
+title: "FISP Cycle 10 Deadlines: 10A, 10B, 10C by Block Number"
+description: "Which FISP Cycle 10 sub-cycle an NYC building is in by the last digit of its tax block, the 10A, 10B and 10C filing windows, and the early filing rule."
+h1: "FISP Cycle 10 deadlines: 10A, 10B and 10C by block number"
+updated: "2026-11-07"
+published: "2026-11-07"
+phase: 2
+primaryKeyword: "fisp cycle 10"
+answer: "FISP Cycle 10 is split by the last digit of the tax block number. Blocks ending 4, 5, 6 or 9 (10A) file by Feb 21, 2027. Blocks ending 0, 7 or 8 (10B) file by Feb 21, 2028. Blocks ending 1, 2 or 3 (10C) file between Feb 21, 2027 and Feb 21, 2029."
+answerSource:
+  name: "DOB Cycle 10 sub-cycle diagram"
+  url: "https://www.nyc.gov/assets/buildings/pdf/cycle10-diagram.pdf"
+facts:
+  - fisp_10a
+  - fisp_10b
+  - fisp_10c
+  - fisp_early
+  - fisp_scope
+  - fisp_late
+  - fisp_nofile
+  - fisp_universe
+  - ll49
+feed: "/facade-restoration-leads"
+feedLabel: "Get the weekly list of new Unsafe filings"
+data: "/data/fisp-unsafe-buildings"
+dataLabel: "NYC Unsafe facade filings, counted every week"
+faq:
+  - q: "How do I know which FISP sub-cycle my building is in?"
+    a: "Look at the last digit of the building's tax block number. Blocks ending in 4, 5, 6 or 9 are 10A. Blocks ending in 0, 7 or 8 are 10B. Blocks ending in 1, 2 or 3 are 10C."
+  - q: "When is the FISP Cycle 10 deadline?"
+    a: "It depends on the sub-cycle. 10A closes Feb 21, 2027, 10B closes Feb 21, 2028 and 10C closes Feb 21, 2029. Each window opens two years before it closes."
+  - q: "Can I file my FISP report early?"
+    a: "From Dec 15, 2025, owners whose Cycle 9 status is No Report Filed may file 10B and 10C reports before their window opens, once outstanding penalties are paid. Other owners file inside their window."
+  - q: "What happens if I miss my sub-cycle window?"
+    a: "A late initial report carries a $1,000 a month civil penalty. Failing to file at all carries $5,000 a year. Both are paid through DOB NOW: Safety."
+  - q: "Will Local Law 49 change the Cycle 10 dates?"
+    a: "Not yet. Local Law 49 of 2025 took effect Oct 1, 2026 and lets DOB set a six to twelve year interval by rule, but no rule has been adopted. The Cycle 10 dates stand."
+sources:
+  - name: "DOB Cycle 10 sub-cycle diagram"
+    url: "https://www.nyc.gov/assets/buildings/pdf/cycle10-diagram.pdf"
+    checked: "2026-11-07"
+  - name: "NYC DOB Facade Compliance page"
+    url: "https://www.nyc.gov/site/buildings/safety/facade-compliance.page"
+    checked: "2026-11-07"
+  - name: "DOB service notice, Dec 8, 2025"
+    url: "https://www.nyc.gov/assets/buildings/pdf/fisp10-sn.pdf"
+    checked: "2026-11-07"
+  - name: "NYC DOB Facade Fees and Penalties page"
+    url: "https://www.nyc.gov/site/buildings/safety/facade-fees-penalties.page"
+    checked: "2026-11-07"
+  - name: "DOB FISP Recommendations Report, Dec 10, 2025"
+    url: "https://www.nyc.gov/assets/buildings/pdf/fisp.pdf"
+    checked: "2026-11-07"
+  - name: "Local Law 49 of 2025"
+    url: "https://www.nyc.gov/assets/buildings/local_laws/ll49of2025.pdf"
+    checked: "2026-11-07"
+---
+
+## Which sub-cycle your building is in
+
+The FISP Cycle 10 deadline for a building depends on one number: the last digit of its tax block. DOB uses that digit to split the roughly <F id="fisp_universe" /> buildings in the program into three groups, so the whole city is not filing at once. Find the digit, read the row.
+
+| Block ends in | Sub-cycle | Window closes |
+| --- | --- | --- |
+| 0 | 10B | <F id="fisp_10b" /> |
+| 1 | 10C | <F id="fisp_10c" /> |
+| 2 | 10C | <F id="fisp_10c" /> |
+| 3 | 10C | <F id="fisp_10c" /> |
+| 4 | 10A | <F id="fisp_10a" /> |
+| 5 | 10A | <F id="fisp_10a" /> |
+| 6 | 10A | <F id="fisp_10a" /> |
+| 7 | 10B | <F id="fisp_10b" /> |
+| 8 | 10B | <F id="fisp_10b" /> |
+| 9 | 10A | <F id="fisp_10a" /> |
+
+The digit that matters is the block, not the lot. A building at block 1234, lot 56 is in 10A because the block ends in 4. The lot number plays no part. Nor does the borough, the building's age or its height beyond the threshold: Local Law 11 cycle rules apply to any building <F id="fisp_scope" />, and the sub-cycle is set by the block alone.
+
+## The three Cycle 10 filing windows
+
+Each sub-cycle has a two-year window. The report has to be filed inside it. Filing before the window opens is not allowed for most owners, and filing after it closes is late.
+
+<F id="fisp_10a" mode="text" />
+
+<F id="fisp_10b" mode="text" />
+
+<F id="fisp_10c" mode="text" />
+
+The windows overlap. On any given day between the start of 10B and the close of 10A there are two sub-cycles open at once, and for the first year of 10C there are two open as well. That is by design. It gives the limited pool of Qualified Exterior Wall Inspectors and facade contractors a steady flow of work instead of a spike every five years. It also means that at the time of writing, Nov 2026, both 10A and 10B are open and 10A owners have a few months left.
+
+The report filed in the window is the initial report. It is the one DOB counts for the deadline. Amended reports, filed after repairs to an Unsafe condition, follow their own clock and do not reset the sub-cycle. The [Local Law 11 guide](/guides/local-law-11) covers the full sequence from initial report to amended report.
+
+<CTA />
+
+## How to find the tax block number
+
+The tax block is part of the borough, block and lot (BBL) identifier the City assigns to every tax lot. It is printed on the property tax bill and on most DOB and HPD correspondence about the building. It is also on the DOB Buildings Information System (BIS) property profile, on DOB NOW, and on the Department of City Planning's ZoLa map, which lets you type an address and read the block and lot off the lot details.
+
+Two things trip people up. The first is a building that spans more than one tax lot. The sub-cycle follows the block, and a building on several lots of the same block is in one sub-cycle. The second is a building complex spread across more than one block. In that case the blocks may end in different digits, and a QEWI should confirm with DOB which filing applies. For almost every building, though, there is one block, one digit and one sub-cycle.
+
+If the building was in Cycle 9, the sub-cycle has not changed. DOB used the same digit groups then, so an owner who filed in 9A files in 10A. The Cycle 9 report in DOB NOW: Safety shows which sub-cycle the building was in, and that is still correct.
+
+## Filing early
+
+The general rule is that an initial report is filed in its own window. DOB made one exception for Cycle 10.
+
+<F id="fisp_early" mode="text" />
+
+The exception is narrow. It applies to owners in 10B and 10C whose Cycle 9 status is No Report Filed, meaning they never filed for the last cycle. Those owners are already accruing failure to file penalties for Cycle 9, and DOB's service notice lets them file a Cycle 10 report once the Cycle 9 penalties are paid, instead of waiting for their window. An owner in good standing from Cycle 9 does not get the early option and files in the normal window.
+
+For an owner in that position, filing early stops the clock on a new set of penalties and gets the building back onto a normal cycle. For a facade contractor, it means a small number of 10B and 10C buildings may file Unsafe reports before their window opens, and those filings show up on [the Unsafe filings data page](/data/fisp-unsafe-buildings) alongside the 10A filings.
+
+## What happens if you miss the window
+
+Missing a sub-cycle deadline does not void the inspection requirement. The report is still owed, and the penalties start.
+
+<F id="fisp_late" mode="text" /> <F id="fisp_nofile" mode="text" />
+
+Late filing and failure to file are two different things on DOB's schedule. A report filed after the window closes is late and carries the monthly penalty for every month it was overdue. A report never filed carries the annual penalty and keeps accruing until a report is filed. Both are paid through DOB NOW: Safety, and the [Local Law 11 penalties guide](/guides/local-law-11-penalties) lists the full schedule with filing fees.
+
+The common cause of a missed window is not neglect but lead time. A QEWI needs to be hired, scaffold drops or rigging scheduled, the close-up inspection done, and the report written and filed. On a large or complicated facade that takes months, and QEWIs book up toward the end of each window. An owner in 10A who has not engaged a QEWI by late 2026 is already cutting it close.
+
+## Will Local Law 49 change Cycle 10
+
+<F id="ll49" mode="text" />
+
+That is the current position. The law gives DOB the power to lengthen the interval. DOB published a report on the program with recommendations in December 2025, but the power has not been used, and until DOB adopts a rule the Cycle 10 dates in the table above are the deadlines. Any rule change would be published by DOB and would come with its own transition schedule. We will update this guide and the Cycle 10 facts on it if that happens.
+
+## What the deadlines mean for contractors
+
+The sub-cycle calendar tells a facade contractor where the work is coming from. Every 10A building has to file by <F id="fisp_10a" />, and the share of those filings rated Unsafe or SWARMP is where the repair work is. The [SWARMP vs Unsafe guide](/guides/swarmp-vs-unsafe) explains what each rating obliges the owner to do.
+
+Three patterns follow from the calendar. First, filings cluster in the last months of each window, so the volume of new Unsafe reports rises as a sub-cycle closes. Second, a 10B building with a SWARMP condition from Cycle 9 has to be re-inspected before <F id="fisp_10b" />, and if the condition was never fixed the QEWI must rate it Unsafe this time. Third, 10C buildings are not idle: their owners can hire a QEWI now, and some will file as soon as their window opens on the date in the 10C sentence above.
+
+The Unsafe filings are public on NYC Open Data within days of the QEWI submitting them. The weekly list on the [facade restoration leads](/facade-restoration-leads) page is built from them.

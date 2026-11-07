@@ -11,7 +11,7 @@ import { pageMetadata } from "@/lib/seo";
 const META = {
   title: "Construction Lead Services Compared | Building Sauce",
   description:
-    "Honest comparisons of Building Sauce with FieldClients, Shovels, ConstructConnect and Dodge: what each sells, price model, contract terms and who each suits.",
+    "Honest comparisons of Building Sauce with FieldClients, Shovels, ConstructConnect and Dodge: what each sells, price model, terms and who each suits.",
   path: "/compare",
 };
 
